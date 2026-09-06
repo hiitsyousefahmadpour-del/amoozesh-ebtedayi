@@ -23,7 +23,7 @@ export default function Home() {
             فرم‌های آماده و راهنمای جلسه‌ی اولیا — بازنویسی‌شده و آماده‌ی چاپ.
           </p>
           <div className="hero-actions">
-            <Link className="btn btn-primary" to="/avalin-zang">شروع کنید: بسته‌ی «اولین زنگ»</Link>
+            <Link className="btn btn-primary" to="/avalin-zang">شروع کنید: بسته‌ی «اولین هفته »</Link>
             <Link className="btn btn-ghost" to="/arzeshyabi">راهنمای ارزشیابی</Link>
           </div>
           <div className="stats">
