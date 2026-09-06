@@ -12,9 +12,7 @@ export default function Home() {
         <div className="container hero-inner">
           <p className="eyebrow">مدیریت آموزش و پرورش مبارکه · معاونت آموزش ابتدایی</p>
           <h1>
-            هرچه آموزگار ابتدایی لازم دارد،{' '}
-            <span className="mark">
-              یک‌جا
+            هرچه آموزگار ابتدایی لازم دارد
               <svg viewBox="0 0 300 18" preserveAspectRatio="none" aria-hidden="true">
                 <path d="M4 12 C 60 4, 120 16, 180 8 S 270 6, 296 11" />
               </svg>
