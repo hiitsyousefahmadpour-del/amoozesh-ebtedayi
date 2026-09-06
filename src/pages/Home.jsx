@@ -33,7 +33,7 @@ export default function Home() {
           </p>
 
           <div className="hero-actions">
-            <Link className="btn btn-primary" to="/avalin-zang">
+            <Link className="btn btn-primary" to="/zang-aval">
               شروع کنید: بسته‌ی «اولین هفته»
             </Link>
 
