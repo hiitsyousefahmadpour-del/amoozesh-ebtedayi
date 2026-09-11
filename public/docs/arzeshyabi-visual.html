@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>سنجش و ارزشیابی در دوره‌ی ابتدایی — راهنمای تصویری</title>
+<link href="https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-font-face.css" rel="stylesheet">
+<style>
+:root{
+  --ink:#14324E; --ink2:#2C5680; --soft:#5B7896;
+  --sky:#3E8BC4; --teal:#148F7E; --ochre:#E5A519; --rust:#C0563C; --plum:#7A5AA6;
+  --paper:#F6F9FC; --card:#FFF; --line:#DDE7EF; --tint:#EEF4F9; --r:14px;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);
+  font-family:Vazirmatn,"IRANSans",Tahoma,sans-serif;font-size:16px;line-height:1.8}
+.page{max-width:980px;margin:0 auto;padding:0 18px 60px}
+
+/* سربرگ */
+.lh{margin:0 -18px 0;background:linear-gradient(135deg,#14324E,#1E4A72 60%,#2C5680);
+  color:#fff;padding:22px 26px 20px}
+.lh-in{max-width:920px;margin:0 auto;display:flex;justify-content:space-between;
+  align-items:flex-end;gap:16px;flex-wrap:wrap}
+.lh-org{margin:0;font-size:17px;font-weight:700;line-height:1.6}
+.lh-org small{display:block;font-size:12.5px;font-weight:400;color:#B9D0E2;margin-top:3px}
+.lh-by{font-size:12.5px;color:#CFE0EC;text-align:left;line-height:1.9}
+.lh-by b{color:#fff}
+.rule{height:5px;background:linear-gradient(90deg,var(--ochre),var(--teal),var(--sky));margin:0 -18px 32px}
+
+.kicker{display:inline-block;background:#FDF3DC;color:#8A6410;font-size:13px;
+  padding:4px 14px;border-radius:100px;margin:0 0 12px}
+h1{font-size:clamp(28px,5.6vw,42px);font-weight:800;line-height:1.3;margin:0 0 10px;letter-spacing:-.5px}
+.sub{color:var(--soft);font-size:16.5px;max-width:58ch;margin:0 0 30px}
+
+section{margin-bottom:44px}
+.hd{display:flex;align-items:center;gap:12px;margin:0 0 6px}
+.num{flex:none;width:32px;height:32px;border-radius:10px;background:var(--ink);color:#fff;
+  font-size:15px;font-weight:700;display:flex;align-items:center;justify-content:center}
+h2{font-size:clamp(19px,3.6vw,25px);font-weight:800;margin:0;line-height:1.4}
+h3{font-size:17px;font-weight:700;margin:24px 0 8px}
+.lede{color:var(--soft);font-size:15px;margin:0 0 18px;padding-inline-start:44px;max-width:64ch}
+p{max-width:70ch}
+
+/* دیاگرام */
+.dg{background:var(--card);border:1px solid var(--line);border-radius:var(--r);
+  padding:14px;margin:16px 0;overflow-x:auto}
+.dg svg{display:block;width:100%;min-width:580px;height:auto}
+.dg-hint{font-size:12.5px;color:var(--soft);margin:6px 2px 0}
+.b-fill{fill:var(--card);stroke:var(--line);stroke-width:2}
+.b-ink{fill:var(--ink)}
+.b-sky{fill:var(--sky)}.b-teal{fill:var(--teal)}.b-ochre{fill:var(--ochre)}
+.b-rust{fill:var(--rust)}.b-plum{fill:var(--plum)}.b-tint{fill:var(--tint);stroke:var(--line);stroke-width:1.5}
+.t{fill:var(--ink);font-size:17px}
+.t-s{fill:var(--soft);font-size:14px}
+.t-w{fill:#fff;font-size:17px}
+.t-b{font-weight:700}
+.ln{stroke:var(--ink2);stroke-width:2;fill:none;opacity:.55}
+.ar{stroke:var(--ochre);stroke-width:2.5;fill:none}
+.arh{fill:var(--ochre)}
+
+/* کارت‌ها */
+.grid{display:grid;gap:14px}
+.g2{grid-template-columns:repeat(2,1fr)}
+.g3{grid-template-columns:repeat(3,1fr)}
+.g4{grid-template-columns:repeat(4,1fr)}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:15px 17px}
+.card b{display:block;font-size:15.5px;margin-bottom:3px}
+.card span{font-size:13.5px;color:var(--soft);line-height:1.7;display:block}
+.card i{font-style:normal;display:inline-block;margin-top:8px;font-size:12.5px;
+  background:var(--tint);color:var(--ink2);border-radius:100px;padding:2px 10px}
+.top-sky{border-top:5px solid var(--sky)}
+.top-teal{border-top:5px solid var(--teal)}
+.top-ochre{border-top:5px solid var(--ochre)}
+.top-rust{border-top:5px solid var(--rust)}
+.top-plum{border-top:5px solid var(--plum)}
+
+table{width:100%;border-collapse:collapse;background:var(--card);
+  border-radius:12px;overflow:hidden;font-size:14.5px;margin:14px 0}
+th,td{padding:10px 13px;text-align:right;border-bottom:1px solid var(--line)}
+th{background:var(--ink);color:#fff;font-weight:600}
+tr:last-child td{border-bottom:none}
+tbody tr:nth-child(even){background:#FAFCFE}
+
+.do,.dont{border-radius:var(--r);padding:16px 18px;background:var(--card);border:1px solid var(--line)}
+.do{border-top:5px solid var(--teal)}
+.dont{border-top:5px solid var(--rust)}
+.do h3,.dont h3{margin:0 0 10px;font-size:16.5px}
+.do h3{color:var(--teal)}.dont h3{color:var(--rust)}
+.do ul,.dont ul,.qa ul{margin:0;padding-inline-start:18px}
+.do li,.dont li{font-size:14px;margin-bottom:6px;line-height:1.7}
+
+.qa{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px 17px}
+.qa b{display:block;font-size:15px;color:var(--ink2);margin-bottom:4px}
+.qa p{margin:0;font-size:14px;color:var(--ink);line-height:1.75}
+.note{border-inline-start:5px solid var(--ochre);background:#FFFBF0;
+  padding:12px 16px;margin:16px 0;font-size:14.5px;border-radius:0 10px 10px 0}
+
+footer{margin-top:44px;border-top:1px solid var(--line);padding-top:18px;
+  color:var(--soft);font-size:13.5px;line-height:1.9;text-align:center}
+
+@media(max-width:760px){
+  .g3,.g4{grid-template-columns:repeat(2,1fr)}
+  .lede{padding-inline-start:0}
+}
+@media(max-width:470px){.g2,.g3,.g4{grid-template-columns:1fr}}
+
+@page{size:A4;margin:12mm}
+@media print{
+  :root{--sky:#3a3a3a;--teal:#222;--ochre:#555;--rust:#222;--plum:#444;
+        --ink:#000;--ink2:#222;--soft:#444;--line:#999;--tint:#EFEFEF;--paper:#fff;--card:#fff}
+  body{background:#fff;font-size:10pt;line-height:1.55;
+    -webkit-print-color-adjust:exact;print-color-adjust:exact}
+  .page{max-width:none;padding:0}
+  .lh{background:#fff!important;color:#000;border-top:4px solid #000;
+    border-bottom:1px solid #000;padding:10px 0;margin:0}
+  .lh-org small,.lh-by{color:#333}.lh-by b{color:#000}
+  .rule{background:#000;height:2px;margin:2px 0 22px}
+  .kicker{background:#EEE;color:#000;border:1px solid #999}
+  .num{background:#000}
+  th{background:#E6E6E6;color:#000}
+  .card i{background:#EFEFEF;color:#000}
+  .ar,.arh{stroke:#000;fill:none}.arh{fill:#000}
+  .dg{overflow:visible}.dg svg{min-width:0}
+  .dg-hint{display:none}
+  section{break-inside:avoid}
+  .dg,.card,table,.do,.dont,.qa,.note{break-inside:avoid}
+  a{color:inherit;text-decoration:none}
+}
+</style>
+</head>
+<body>
+<div class="page">
+
+<header class="lh">
+  <div class="lh-in">
+    <p class="lh-org">مدیریت آموزش و پرورش مبارکه
+      <small>معاونت آموزش ابتدایی &nbsp;·&nbsp; کارگروه کیفیت‌بخشی آموزش ابتدایی</small></p>
+    <div class="lh-by">تهیه و تنظیم: <b>یوسف احمدپور</b><br>کارگروه کیفیت‌بخشی آموزش ابتدایی</div>
+  </div>
+</header>
+<div class="rule"></div>
+
+<span class="kicker">راهنمای تصویری آموزگار</span>
+<h1>سنجش و ارزشیابی در دوره‌ی ابتدایی</h1>
+<p class="sub">آنچه برای اجرای درست ارزشیابی کیفی ـ توصیفی لازم است: مفاهیم، ابزارها، تکالیف، بازخورد، مسیر ارتقا و مهلت‌ها — با نقشه و دیاگرام.</p>
+
+<!-- ۱ -->
+<section>
+  <div class="hd"><div class="num">۱</div><h2>نقشه‌ی کلی</h2></div>
+  <p class="lede">تمام ارزشیابی توصیفی حول چهار پرسش می‌چرخد. هر تصمیمی که در کلاس می‌گیری، پاسخ یکی از این چهار است.</p>
+
+  <div class="dg">
+  <svg viewBox="0 0 660 480" xmlns="http://www.w3.org/2000/svg">
+    <path class="ln" d="M445,215 Q505,180 525,140"/>
+    <path class="ln" d="M215,215 Q155,180 135,140"/>
+    <path class="ln" d="M445,265 Q505,300 525,345"/>
+    <path class="ln" d="M215,265 Q155,300 135,345"/>
+
+    <rect class="b-ink" x="210" y="198" width="240" height="84" rx="16"/>
+    <text class="t-w t-b" x="330" y="234" text-anchor="middle" font-size="19">ارزشیابی کیفی ـ توصیفی</text>
+    <text x="330" y="262" text-anchor="middle" font-size="14" fill="#A9C6DD">هدف: بهبود یادگیری، نه رتبه‌بندی</text>
+
+    <rect class="b-fill" x="430" y="40" width="215" height="100" rx="13"/>
+    <rect class="b-sky" x="430" y="40" width="215" height="6" rx="3"/>
+    <text class="t t-b" x="537" y="74" text-anchor="middle" fill="#3E8BC4">چه می‌سنجیم؟</text>
+    <text class="t-s" x="537" y="99" text-anchor="middle">اهداف درس در سه حیطه</text>
+    <text class="t-s" x="537" y="121" text-anchor="middle">شناختی · عاطفی · مهارتی</text>
+
+    <rect class="b-fill" x="15" y="40" width="215" height="100" rx="13"/>
+    <rect class="b-teal" x="15" y="40" width="215" height="6" rx="3"/>
+    <text class="t t-b" x="122" y="74" text-anchor="middle" fill="#148F7E">با چه ابزاری؟</text>
+    <text class="t-s" x="122" y="99" text-anchor="middle">ترکیبی از ابزارها</text>
+    <text class="t-s" x="122" y="121" text-anchor="middle">آزمون · مشاهده · پوشه‌ی کار</text>
+
+    <rect class="b-fill" x="430" y="340" width="215" height="100" rx="13"/>
+    <rect class="b-ochre" x="430" y="340" width="215" height="6" rx="3"/>
+    <text class="t t-b" x="537" y="374" text-anchor="middle" fill="#A9760A">چگونه بازخورد؟</text>
+    <text class="t-s" x="537" y="399" text-anchor="middle">به‌موقع، مشخص، اجراشدنی</text>
+    <text class="t-s" x="537" y="421" text-anchor="middle">وضعیت · انتظار · راهکار</text>
+
+    <rect class="b-fill" x="15" y="340" width="215" height="100" rx="13"/>
+    <rect class="b-plum" x="15" y="340" width="215" height="6" rx="3"/>
+    <text class="t t-b" x="122" y="374" text-anchor="middle" fill="#7A5AA6">چگونه گزارش؟</text>
+    <text class="t-s" x="122" y="399" text-anchor="middle">چهار سطح، بدون نمره</text>
+    <text class="t-s" x="122" y="421" text-anchor="middle">کارنامه در نوبت‌های رسمی</text>
+  </svg>
+  <p class="dg-hint">اگر تصویر کامل دیده نمی‌شود، آن را به چپ و راست بکشید.</p>
+  </div>
+</section>
+
+<!-- ۲ -->
+<section>
+  <div class="hd"><div class="num">۲</div><h2>چرخه‌ی سنجش در هر درس</h2></div>
+  <p class="lede">ارزشیابی تکوینی یعنی سنجش، پایانِ آموزش نیست؛ در طول آن جریان دارد و همان جا آموزش را اصلاح می‌کند.</p>
+
+  <div class="dg">
+  <svg viewBox="0 0 660 300" xmlns="http://www.w3.org/2000/svg">
+    <defs><marker id="a1" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto">
+      <path class="arh" d="M0,0 L9,4.5 L0,9 z"/></marker></defs>
+
+    <rect class="b-fill" x="495" y="40" width="150" height="100" rx="13"/>
+    <circle class="b-sky" cx="570" cy="70" r="15"/><text class="t-w" x="570" y="76" text-anchor="middle" font-size="15">۱</text>
+    <text class="t t-b" x="570" y="104" text-anchor="middle">آغازین</text>
+    <text class="t-s" x="570" y="126" text-anchor="middle">پیش‌نیازها را می‌سنجم</text>
+
+    <rect class="b-fill" x="335" y="40" width="150" height="100" rx="13"/>
+    <circle class="b-teal" cx="410" cy="70" r="15"/><text class="t-w" x="410" y="76" text-anchor="middle" font-size="15">۲</text>
+    <text class="t t-b" x="410" y="104" text-anchor="middle">حین تدریس</text>
+    <text class="t-s" x="410" y="126" text-anchor="middle">بازخورد فوری می‌دهم</text>
+
+    <rect class="b-fill" x="175" y="40" width="150" height="100" rx="13"/>
+    <circle class="b-ochre" cx="250" cy="70" r="15"/><text class="t-w" x="250" y="76" text-anchor="middle" font-size="15">۳</text>
+    <text class="t t-b" x="250" y="104" text-anchor="middle">پس از درس</text>
+    <text class="t-s" x="250" y="126" text-anchor="middle">تثبیت و ثبت توصیفی</text>
+
+    <rect class="b-fill" x="15" y="40" width="150" height="100" rx="13"/>
+    <circle class="b-plum" cx="90" cy="70" r="15"/><text class="t-w" x="90" y="76" text-anchor="middle" font-size="15">۴</text>
+    <text class="t t-b" x="90" y="104" text-anchor="middle">پایانی</text>
+    <text class="t-s" x="90" y="126" text-anchor="middle">جمع‌بندی نوبت</text>
+
+    <line class="ar" x1="492" y1="90" x2="490" y2="90" marker-end="url(#a1)"/>
+    <line class="ar" x1="332" y1="90" x2="330" y2="90" marker-end="url(#a1)"/>
+    <line class="ar" x1="172" y1="90" x2="170" y2="90" marker-end="url(#a1)"/>
+
+    <path class="ar" d="M60,150 Q330,255 600,150" marker-end="url(#a1)"/>
+    <text class="t-s" x="330" y="235" text-anchor="middle">در هر درس تکرار می‌شود</text>
+  </svg>
+  </div>
+
+  <div class="grid g2">
+    <div class="card top-sky"><b>سنجش آغازین</b><span>با پرسش شفاهی، کارت یا گفت‌وگوی کوتاه. آزمون کتبی برای این مرحله لازم نیست.</span></div>
+    <div class="card top-teal"><b>سنجش حین تدریس</b><span>مشاهده و پرسش در جریان کار؛ اگر بیشتر کلاس نفهمید، روش تدریس عوض می‌شود نه سرعت.</span></div>
+    <div class="card top-ochre"><b>سنجش پس از درس</b><span>تکلیف تثبیت‌کننده، و یادداشت نتیجه در قالب جمله‌ی توصیفی.</span></div>
+    <div class="card top-plum"><b>سنجش پایانی</b><span>جمع‌بندی شواهدِ کل نوبت و ثبت در کارنامه؛ نه یک آزمون بزرگ در آخر.</span></div>
+  </div>
+</section>
+
+<!-- ۳ -->
+<section>
+  <div class="hd"><div class="num">۳</div><h2>خانواده‌ی ابزارها</h2></div>
+  <p class="lede">ابزارها سه خانواده‌اند. استفاده از یک نوع ابزار در تمام سال ممنوع است، و به‌کار بردن چند ابزار هم‌زمان برای سنجش یک هدف هم ممنوع.</p>
+
+  <div class="dg">
+  <svg viewBox="0 0 660 380" xmlns="http://www.w3.org/2000/svg">
+    <rect class="b-ink" x="235" y="10" width="190" height="56" rx="13"/>
+    <text class="t-w t-b" x="330" y="45" text-anchor="middle" font-size="18">ابزارهای سنجش</text>
+
+    <path class="ln" d="M330,66 L330,96 M120,96 L540,96 M120,96 L120,126 M330,96 L330,126 M540,96 L540,126"/>
+
+    <rect class="b-fill" x="440" y="126" width="200" height="52" rx="12"/>
+    <rect class="b-sky" x="440" y="126" width="200" height="5" rx="3"/>
+    <text class="t t-b" x="540" y="159" text-anchor="middle" fill="#3E8BC4">آزمون‌محور</text>
+    <text class="t-s" x="540" y="205" text-anchor="middle">آزمونک</text>
+    <text class="t-s" x="540" y="232" text-anchor="middle">آزمون مداد کاغذی</text>
+    <text class="t-s" x="540" y="259" text-anchor="middle">آزمون عملکردی</text>
+    <text class="t-s" x="540" y="286" text-anchor="middle">آزمون تراکمی فصلی</text>
+
+    <rect class="b-fill" x="230" y="126" width="200" height="52" rx="12"/>
+    <rect class="b-teal" x="230" y="126" width="200" height="5" rx="3"/>
+    <text class="t t-b" x="330" y="159" text-anchor="middle" fill="#148F7E">مشاهده‌محور</text>
+    <text class="t-s" x="330" y="205" text-anchor="middle">فهرست وارسی</text>
+    <text class="t-s" x="330" y="232" text-anchor="middle">جدول توصیف عملکرد</text>
+    <text class="t-s" x="330" y="259" text-anchor="middle">واقعه‌نگاری</text>
+    <text class="t-s" x="330" y="286" text-anchor="middle">مشاهده‌ی کلاسی</text>
+
+    <rect class="b-fill" x="20" y="126" width="200" height="52" rx="12"/>
+    <rect class="b-plum" x="20" y="126" width="200" height="5" rx="3"/>
+    <text class="t t-b" x="120" y="159" text-anchor="middle" fill="#7A5AA6">مشارکتی</text>
+    <text class="t-s" x="120" y="205" text-anchor="middle">پوشه‌ی کار</text>
+    <text class="t-s" x="120" y="232" text-anchor="middle">خودسنجی</text>
+    <text class="t-s" x="120" y="259" text-anchor="middle">والدین‌سنجی</text>
+    <text class="t-s" x="120" y="286" text-anchor="middle">پروژه‌ی فردی و گروهی</text>
+
+    <rect class="b-tint" x="20" y="315" width="620" height="46" rx="12"/>
+    <text class="t-s" x="330" y="344" text-anchor="middle">همه‌ی این‌ها ابزارند، نه هدف — انتخاب ابزار با معلم و متناسب با هدف درس است</text>
+  </svg>
+  </div>
+
+  <div class="grid g3">
+    <div class="card"><b>آزمونک</b><span>یک مفهوم، دو یا سه هدف، برای هر هدف حداقل دو سؤال.</span><i>جدول توصیف عملکرد الزامی</i></div>
+    <div class="card"><b>آزمون مداد کاغذی</b><span>سؤال بیشتر، پوشش گسترده‌تر اهداف رفتاری.</span><i>همراه بازخورد در پوشه‌ی کار</i></div>
+    <div class="card"><b>آزمون عملکردی</b><span>با یک چالش در بافت مسئله شروع می‌شود؛ دانش‌آموز باید دانش و مهارتش را به کار بگیرد.</span><i>پس از تثبیت مفاهیم پایه</i></div>
+    <div class="card"><b>فهرست وارسی</b><span>ابزار اصلی دروس شفاهی و مهارتی؛ حداکثر ۱۲ گویه.</span><i>فارسی خوانداری، قرآن، هدیه‌ها، ورزش</i></div>
+    <div class="card"><b>پوشه‌ی کار</b><span>نمونه‌کارهای فرایندی و به‌هم‌پیوسته که پیشرفت را نشان می‌دهد.</span><i>هر برگه: امضا + بازخورد + تاریخ</i></div>
+    <div class="card"><b>واقعه‌نگاری</b><span>ثبت رویداد رفتاری با سه عنصر توصیف، تفسیر، راهکار.</span><i>محرمانه، با کد به‌جای نام</i></div>
+  </div>
+
+  <div class="note"><b>دو دسته‌بندی آزمون عملکردی:</b> مهارتی گرانلاند (کتبی، شناسایی، نمونه کار، موقعیت شبیه‌سازی‌شده) و عملکردی استیکنز (عملکرد در موقعیت واقعی و شبیه‌سازی‌شده). معلم می‌تواند از هر دو استفاده کند.</div>
+</section>
+
+<!-- ۴ -->
+<section>
+  <div class="hd"><div class="num">۴</div><h2>سطوح حیطه‌ی شناختی</h2></div>
+  <p class="lede">سؤال خوب فقط «دانش» را نمی‌سنجد. هنگام طراحی آزمونک، سؤال‌ها را در سطوح مختلف پخش کن.</p>
+
+  <div class="dg">
+  <svg viewBox="0 0 660 340" xmlns="http://www.w3.org/2000/svg">
+    <polygon class="b-fill" points="250,20 410,20 450,66 210,66"/>
+    <text class="t t-b" x="330" y="50" text-anchor="middle">ارزشیابی</text>
+    <polygon class="b-fill" points="210,70 450,70 490,116 170,116"/>
+    <text class="t t-b" x="330" y="100" text-anchor="middle">ترکیب</text>
+    <polygon class="b-fill" points="170,120 490,120 530,166 130,166"/>
+    <text class="t t-b" x="330" y="150" text-anchor="middle">تجزیه و تحلیل</text>
+    <polygon class="b-fill" points="130,170 530,170 570,216 90,216"/>
+    <text class="t t-b" x="330" y="200" text-anchor="middle">کاربرد</text>
+    <polygon class="b-fill" points="90,220 570,220 610,266 50,266"/>
+    <text class="t t-b" x="330" y="250" text-anchor="middle">درک و فهم</text>
+    <polygon class="b-tint" points="50,270 610,270 650,316 10,316"/>
+    <text class="t t-b" x="330" y="300" text-anchor="middle">دانش</text>
+    <text class="t-s" x="640" y="40" text-anchor="end">سطوح بالا</text>
+    <text class="t-s" x="640" y="300" text-anchor="end">سطوح پایه</text>
+  </svg>
+  </div>
+
+  <p>انواع سؤال هم متنوع باشد: <b>عینی</b> (درست و نادرست، جورکردنی، چهارگزینه‌ای) و <b>ذهنی</b> (کامل‌کردنی، تشریحی کوتاه‌پاسخ، تشریحی بلندپاسخ).</p>
+</section>
+
+<!-- ۵ -->
+<section>
+  <div class="hd"><div class="num">۵</div><h2>تکالیف: پنج نوع، پنج کارکرد</h2></div>
+  <p class="lede">تکلیف بی‌هدف، وقتِ خانواده و دانش‌آموز را می‌گیرد بی‌آنکه چیزی به یادگیری اضافه کند.</p>
+
+  <div class="dg">
+  <svg viewBox="0 0 660 250" xmlns="http://www.w3.org/2000/svg">
+    <defs><marker id="a2" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto">
+      <path class="arh" d="M0,0 L9,4.5 L0,9 z"/></marker></defs>
+    <line class="ar" x1="640" y1="40" x2="20" y2="40" marker-end="url(#a2)"/>
+    <text class="t-s" x="330" y="26" text-anchor="middle">مسیر رشد یادگیری</text>
+
+    <rect class="b-fill" x="520" y="60" width="125" height="90" rx="12"/>
+    <rect class="b-sky" x="520" y="60" width="125" height="5" rx="3"/>
+    <text class="t t-b" x="582" y="93" text-anchor="middle">شفاهی</text>
+    <text class="t-s" x="582" y="118" text-anchor="middle">زیربنای</text>
+    <text class="t-s" x="582" y="138" text-anchor="middle">تکلیف کتبی</text>
+
+    <rect class="b-fill" x="390" y="60" width="125" height="90" rx="12"/>
+    <rect class="b-teal" x="390" y="60" width="125" height="5" rx="3"/>
+    <text class="t t-b" x="452" y="93" text-anchor="middle">تمرینی</text>
+    <text class="t-s" x="452" y="118" text-anchor="middle">تثبیت</text>
+    <text class="t-s" x="452" y="138" text-anchor="middle">آموخته‌ها</text>
+
+    <rect class="b-fill" x="260" y="60" width="125" height="90" rx="12"/>
+    <rect class="b-ochre" x="260" y="60" width="125" height="5" rx="3"/>
+    <text class="t t-b" x="322" y="93" text-anchor="middle">ترمیمی</text>
+    <text class="t-s" x="322" y="118" text-anchor="middle">رفع کج‌فهمی</text>
+    <text class="t-s" x="322" y="138" text-anchor="middle">پس از آزمون</text>
+
+    <rect class="b-fill" x="130" y="60" width="125" height="90" rx="12"/>
+    <rect class="b-plum" x="130" y="60" width="125" height="5" rx="3"/>
+    <text class="t t-b" x="192" y="93" text-anchor="middle">بسطی</text>
+    <text class="t-s" x="192" y="118" text-anchor="middle">عمق‌بخشی</text>
+    <text class="t-s" x="192" y="138" text-anchor="middle">پس از تحقق هدف</text>
+
+    <rect class="b-fill" x="15" y="60" width="110" height="90" rx="12"/>
+    <rect class="b-rust" x="15" y="60" width="110" height="5" rx="3"/>
+    <text class="t t-b" x="70" y="93" text-anchor="middle">مهارت‌محور</text>
+    <text class="t-s" x="70" y="118" text-anchor="middle">بر پایه‌ی</text>
+    <text class="t-s" x="70" y="138" text-anchor="middle">استعداد و علاقه</text>
+
+    <rect class="b-tint" x="15" y="175" width="630" height="52" rx="12"/>
+    <text class="t-s" x="330" y="198" text-anchor="middle">تکلیف بسطی، بستر اصلی طراحی تکالیف مهارت‌محور و آمادگی برای آزمون عملکردی است</text>
+    <text class="t-s" x="330" y="219" text-anchor="middle">در همه‌ی انواع، تفاوت‌های فردی دانش‌آموزان در نظر گرفته می‌شود</text>
+  </svg>
+  </div>
+
+  <div class="grid g2">
+    <div class="do"><h3>انجام می‌دهیم</h3><ul>
+      <li>تکلیف شفاهی پیش از کتبی، به‌ویژه در فارسیِ خوانداری</li>
+      <li>تکلیف هدفمند و متنوع، متناسب با تفاوت‌های فردی</li>
+      <li>تکلیف گروهی در کنار فردی، برای ترویج همیاری</li>
+      <li>پیگیری مشکل دانش‌آموز با تمرین مکمل و بازخورد مناسب</li>
+    </ul></div>
+    <div class="dont"><h3>انجام نمی‌دهیم</h3><ul>
+      <li>تکلیف رونویسی بدون هدف</li>
+      <li>تکلیف یکسان برای کل کلاس در همه‌ی موقعیت‌ها</li>
+      <li>مجموعه‌کاربرگ هفتگی با عنوان «آدینه»</li>
+      <li>تکلیف به‌عنوان تنبیه، یا تکلیفی که نیاز به پرینت دارد</li>
+    </ul></div>
+  </div>
+</section>
+
+<!-- ۶ -->
+<section>
+  <div class="hd"><div class="num">۶</div><h2>بازخورد اثرگذار</h2></div>
+  <p class="lede">بازخورد وقتی ارزش دارد که دانش‌آموز هنوز در حال یادگیری است. بعد از پایان کار، بازخورد به قضاوت تبدیل می‌شود.</p>
+
+  <div class="dg">
+  <svg viewBox="0 0 660 210" xmlns="http://www.w3.org/2000/svg">
+    <defs><marker id="a3" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto">
+      <path class="arh" d="M0,0 L9,4.5 L0,9 z"/></marker></defs>
+    <rect class="b-fill" x="440" y="40" width="200" height="80" rx="13"/>
+    <rect class="b-sky" x="440" y="40" width="200" height="5" rx="3"/>
+    <text class="t t-b" x="540" y="76" text-anchor="middle">وضعیت موجود</text>
+    <text class="t-s" x="540" y="101" text-anchor="middle">الان کجاست</text>
+
+    <rect class="b-fill" x="230" y="40" width="200" height="80" rx="13"/>
+    <rect class="b-ochre" x="230" y="40" width="200" height="5" rx="3"/>
+    <text class="t t-b" x="330" y="76" text-anchor="middle">وضعیت مورد انتظار</text>
+    <text class="t-s" x="330" y="101" text-anchor="middle">باید کجا برسد</text>
+
+    <rect class="b-fill" x="20" y="40" width="200" height="80" rx="13"/>
+    <rect class="b-teal" x="20" y="40" width="200" height="5" rx="3"/>
+    <text class="t t-b" x="120" y="76" text-anchor="middle">راهکار</text>
+    <text class="t-s" x="120" y="101" text-anchor="middle">چطور برسد</text>
+
+    <line class="ar" x1="437" y1="80" x2="434" y2="80" marker-end="url(#a3)"/>
+    <line class="ar" x1="227" y1="80" x2="224" y2="80" marker-end="url(#a3)"/>
+    <text class="t-s" x="330" y="165" text-anchor="middle">بازخورد کامل هر سه مؤلفه را دارد؛ اگر یکی نباشد، فقط قضاوت است</text>
+  </svg>
+  </div>
+
+  <h3>چهار نوع بازخورد</h3>
+  <div class="grid g4">
+    <div class="card top-teal"><b>تأییدی</b><span>آنچه درست نوشته شده را تأیید کن</span></div>
+    <div class="card top-sky"><b>اصلاحی</b><span>اشتباه را تذکر بده و درستش را بگو</span></div>
+    <div class="card top-ochre"><b>روشنگر</b><span>بگو چرا اشتباه است</span></div>
+    <div class="card top-plum"><b>ترمیمی</b><span>راه یا روش رسیدن به پاسخ درست را پیشنهاد بده</span></div>
+  </div>
+
+  <h3>کجا بازخورد کتبی اجتناب‌ناپذیر است</h3>
+  <table>
+    <tr><th style="width:34%">مورد</th><th>توضیح</th></tr>
+    <tr><td>فرم الف کارنامه</td><td>گزارش رسمی پیشرفت به خانواده</td></tr>
+    <tr><td>برگه‌ی داخل پوشه‌ی کار</td><td>هر برگه باید امضا، بازخورد و تاریخ داشته باشد</td></tr>
+    <tr><td>اشکال اساسی فراگیر</td><td>جایی که باید جهت یادگیری او عوض شود</td></tr>
+    <tr><td>کار برجسته</td><td>وقتی دانش‌آموز کاری خارق‌العاده انجام داده است</td></tr>
+  </table>
+
+  <div class="grid g2">
+    <div class="do"><h3>بازخورد درست</h3><ul>
+      <li>بیشتر شفاهی، در لحظه و کنار دانش‌آموز</li>
+      <li>مشخص و قابل اجرا: «سه خط را کامل نوشتی، حالا فاصله‌ی کلمه‌ها را رعایت کن»</li>
+      <li>متناسب با سن و توانایی خواندن دانش‌آموز</li>
+      <li>در کلاس پرجمعیت: بازخورد کامل فقط برای عملکردهای ناموفق</li>
+    </ul></div>
+    <div class="dont"><h3>این‌ها بازخورد نیستند</h3><ul>
+      <li>مهر «آفرین»، استیکر و برچسب</li>
+      <li>کارت امتیاز و جملات آماده‌ی از پیش تعیین‌شده</li>
+      <li>نوشتن سطح (خیلی خوب، خوب …) پای برگه یا حاشیه‌ی سؤال</li>
+      <li>رنگ‌گذاری به‌جای توضیح: سبز یعنی خوب، قرمز یعنی ضعیف</li>
+    </ul></div>
+  </div>
+  <div class="note">اگر در یک کلاس <b>اکثر</b> دانش‌آموزان به بازخورد کامل توصیفی نیاز دارند، مشکل از دانش‌آموزان نیست؛ روند آموزشی باید بازنگری شود.</div>
+</section>
+
+<!-- ۷ -->
+<section>
+  <div class="hd"><div class="num">۷</div><h2>چهار سطح گزارش</h2></div>
+  <p class="lede">این مقیاس فقط در سه جا نوشته می‌شود: کارنامه (فرم الف)، فهرست وارسی، و جدول توصیف عملکرد.</p>
+
+  <table>
+    <tr><th style="width:24%">سطح</th><th>یعنی چه</th></tr>
+    <tr><td><b>خیلی خوب</b></td><td>دستیابی به هدف با حداقل نقص و تسلط کامل؛ به‌کارگیری آموخته‌ها در موقعیت‌های جدید و غیرتکراری</td></tr>
+    <tr><td><b>خوب</b></td><td>دستیابی با نقایص اندک؛ آگاهی بر فرایند یادگیری و به‌کارگیری آموخته‌ها در موقعیت جدید</td></tr>
+    <tr><td><b>قابل قبول</b></td><td>دستیابی با نقایصی کمتر از آن که مانع یادگیری‌های بعدی شود؛ کاربرد در موقعیت‌های مشابه</td></tr>
+    <tr><td><b>نیاز به آموزش و تلاش بیشتر</b></td><td>نقایصی که مانع یادگیری‌های موفقیت‌آمیز بعدی می‌شود</td></tr>
+  </table>
+</section>
+
+<!-- ۸ -->
+<section>
+  <div class="hd"><div class="num">۸</div><h2>مسیر ارتقا</h2></div>
+  <p class="lede">از خرداد تا شهریور، تصمیم‌ها در این مسیر گرفته می‌شود.</p>
+
+  <div class="dg">
+  <svg viewBox="0 0 660 560" xmlns="http://www.w3.org/2000/svg">
+    <defs><marker id="a4" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto">
+      <path class="arh" d="M0,0 L9,4.5 L0,9 z"/></marker></defs>
+
+    <rect class="b-ink" x="200" y="10" width="260" height="52" rx="13"/>
+    <text class="t-w t-b" x="330" y="43" text-anchor="middle">پایان نوبت دوم — خرداد</text>
+    <line class="ar" x1="330" y1="62" x2="330" y2="104" marker-end="url(#a4)"/>
+
+    <polygon class="b-tint" points="330,108 470,165 330,222 190,165"/>
+    <text class="t t-b" x="330" y="160" text-anchor="middle">همه‌ی دروس</text>
+    <text class="t t-b" x="330" y="182" text-anchor="middle">حداقل قابل قبول؟</text>
+
+    <line class="ar" x1="470" y1="165" x2="500" y2="165" marker-end="url(#a4)"/>
+    <text class="t-s" x="485" y="152" text-anchor="middle">بله</text>
+    <rect class="b-fill" x="500" y="138" width="150" height="54" rx="12"/>
+    <rect class="b-teal" x="500" y="138" width="150" height="5" rx="3"/>
+    <text class="t t-b" x="575" y="172" text-anchor="middle" fill="#148F7E">ارتقا</text>
+
+    <line class="ar" x1="330" y1="222" x2="330" y2="256" marker-end="url(#a4)"/>
+    <text class="t-s" x="355" y="245" text-anchor="start">خیر</text>
+    <rect class="b-fill" x="170" y="260" width="320" height="60" rx="12"/>
+    <rect class="b-ochre" x="170" y="260" width="320" height="5" rx="3"/>
+    <text class="t t-b" x="330" y="290" text-anchor="middle">کلاس جبرانی یا پروژه</text>
+    <text class="t-s" x="330" y="311" text-anchor="middle">با حضور آموزگار مربوطه، تا ۱۵ شهریور</text>
+
+    <line class="ar" x1="330" y1="320" x2="330" y2="352" marker-end="url(#a4)"/>
+    <polygon class="b-tint" points="330,356 470,410 330,464 190,410"/>
+    <text class="t t-b" x="330" y="405" text-anchor="middle">در شهریور</text>
+    <text class="t t-b" x="330" y="427" text-anchor="middle">قابل قبول شد؟</text>
+
+    <line class="ar" x1="470" y1="410" x2="500" y2="410" marker-end="url(#a4)"/>
+    <text class="t-s" x="485" y="397" text-anchor="middle">بله</text>
+    <rect class="b-fill" x="500" y="383" width="150" height="54" rx="12"/>
+    <rect class="b-teal" x="500" y="383" width="150" height="5" rx="3"/>
+    <text class="t t-b" x="575" y="417" text-anchor="middle" fill="#148F7E">ارتقا</text>
+
+    <path class="ar" d="M330,464 L330,486 L170,486 L170,500" marker-end="url(#a4)"/>
+    <path class="ar" d="M330,464 L330,486 L500,486 L500,500" marker-end="url(#a4)"/>
+
+    <rect class="b-fill" x="20" y="504" width="300" height="52" rx="12"/>
+    <rect class="b-rust" x="20" y="504" width="300" height="5" rx="3"/>
+    <text class="t t-b" x="170" y="527" text-anchor="middle" fill="#C0563C">ضعف هم‌زمان فارسی و ریاضی</text>
+    <text class="t-s" x="170" y="547" text-anchor="middle">ارتقا ممکن نیست</text>
+
+    <rect class="b-fill" x="350" y="504" width="300" height="52" rx="12"/>
+    <rect class="b-plum" x="350" y="504" width="300" height="5" rx="3"/>
+    <text class="t t-b" x="500" y="527" text-anchor="middle" fill="#7A5AA6">ضعف در یکی از دروس</text>
+    <text class="t-s" x="500" y="547" text-anchor="middle">تصمیم با شورای مدرسه</text>
+  </svg>
+  </div>
+
+  <div class="note">تصمیم شورای مدرسه قطعی و لازم‌الاجراست. معلم موظف است مستندات را ارائه دهد. استفاده از این مسیر در کل دوره‌ی ابتدایی حداکثر <b>۲ بار و غیرمتوالی</b> مجاز است.</div>
+</section>
+
+<!-- ۹ -->
+<section>
+  <div class="hd"><div class="num">۹</div><h2>تقویم و مهلت‌ها</h2></div>
+
+  <div class="dg">
+  <svg viewBox="0 0 660 190" xmlns="http://www.w3.org/2000/svg">
+    <rect class="b-sky" x="400" y="66" width="240" height="14" rx="7"/>
+    <rect class="b-teal" x="130" y="66" width="262" height="14" rx="7"/>
+    <rect class="b-ochre" x="20" y="66" width="102" height="14" rx="7"/>
+
+    <text class="t t-b" x="520" y="52" text-anchor="middle" fill="#3E8BC4">نوبت اول</text>
+    <text class="t t-b" x="261" y="52" text-anchor="middle" fill="#148F7E">نوبت دوم</text>
+    <text class="t t-b" x="71" y="52" text-anchor="middle" fill="#A9760A">نوبت سوم</text>
+
+    <text class="t-s" x="628" y="106" text-anchor="middle">مهر</text>
+    <text class="t-s" x="412" y="106" text-anchor="middle">دی</text>
+    <text class="t-s" x="380" y="106" text-anchor="middle">بهمن</text>
+    <text class="t-s" x="142" y="106" text-anchor="middle">خرداد</text>
+    <text class="t-s" x="71" y="106" text-anchor="middle">شهریور</text>
+
+    <text class="t-s" x="520" y="140" text-anchor="middle">گزارش دی‌ماه</text>
+    <text class="t-s" x="261" y="140" text-anchor="middle">گزارش خردادماه</text>
+    <text class="t-s" x="71" y="140" text-anchor="middle">گزارش شهریور</text>
+    <text class="t-s" x="330" y="172" text-anchor="middle">در هر نوبت، حداقل دو بار دیگر هم اولیا از روند پیشرفت مطلع می‌شوند</text>
+  </svg>
+  </div>
+
+  <table>
+    <tr><th style="width:58%">کار</th><th>مهلت</th></tr>
+    <tr><td>تحویل گزارش نوبت به دفتر مدرسه</td><td>۵ روز پس از پایان نوبت</td></tr>
+    <tr><td>اطلاع‌رسانی کتبی به ولیّ دانش‌آموز</td><td>۱۰ روز پس از هر نوبت</td></tr>
+    <tr><td>اطلاع‌رسانی اضافی به اولیا در هر نوبت</td><td>حداقل ۲ بار</td></tr>
+    <tr><td>مهلت اعتراض ولیّ به گزارش</td><td>۱ هفته پس از اعلام</td></tr>
+    <tr><td>اعلام نتیجه‌ی اعتراض</td><td>۳ روز</td></tr>
+    <tr><td>ثبت نتایج در دفتر ارزشیابی</td><td>۱ ماه پس از پایان نوبت</td></tr>
+    <tr><td>حداقل حضور لازم برای صدور گزارش</td><td>۸۰ درصد روزهای آموزشی</td></tr>
+  </table>
+</section>
+
+<!-- ۱۰ -->
+<section>
+  <div class="hd"><div class="num">۱۰</div><h2>پوشه‌ی کار و مستندسازی</h2></div>
+  <p class="lede">پوشه‌ی کار ابزار است، نه هدف. قرار نیست همه‌چیز در آن جمع شود.</p>
+
+  <div class="grid g3">
+    <div class="card top-teal"><b>چه چیزی وارد می‌شود</b><span>نمونه‌کارهای مرتبط و فرایندی که پیشرفت را نشان می‌دهد: انواع آزمون، تکالیف منتخب، پروژه، گزارش علمی.</span></div>
+    <div class="card top-sky"><b>شرط ورود هر برگه</b><span>امضا، بازخورد کتبی، و تاریخ. بدون این سه، برگه فقط کاغذ است.</span></div>
+    <div class="card top-rust"><b>چه چیزی وارد نمی‌شود</b><span>تمام آزمون‌ها و تکالیف، و اسناد بدون هدف یا با اهداف تکراری.</span></div>
+  </div>
+
+  <h3>ارزیابی پوشه‌ی کار</h3>
+  <table>
+    <tr><th style="width:50%">ملاک</th><th>چه کسی</th></tr>
+    <tr><td>استمرار منطقی شواهد و درج تاریخ روی آن‌ها</td><td>معلم</td></tr>
+    <tr><td>وجود نظر و بازخورد توصیفی روی شواهد</td><td>معلم</td></tr>
+    <tr><td>خودارزیابی دانش‌آموز از پوشه</td><td>دانش‌آموز، ماهانه</td></tr>
+    <tr><td>ارزیابی از کار دانش‌آموز</td><td>اولیا، فصلی</td></tr>
+    <tr><td>وجود شواهد آزمون، تکلیف، تولیدات و سایر موارد</td><td>مدیر یا معاون در نظارت</td></tr>
+  </table>
+</section>
+
+<!-- ۱۱ -->
+<section>
+  <div class="hd"><div class="num">۱۱</div><h2>ارزشیابی در فضای مجازی</h2></div>
+  <p class="lede">در آموزش غیرحضوری، اصول عوض نمی‌شود؛ ابزارها شکل تازه می‌گیرند.</p>
+
+  <div class="grid g3">
+    <div class="card top-sky"><b>آزمون عملکردی مجازی</b><span>پرسش صوتی، پرسش کوتاه تایپ‌شده، تکلیف مهارت‌محور دوره‌ای.</span></div>
+    <div class="card top-teal"><b>پروژه‌ی فردی و گروهی</b><span>گروهی می‌تواند هم‌زمان انجام شود یا مرحله‌ای، دست‌به‌دست بین دانش‌آموزان.</span></div>
+    <div class="card top-plum"><b>کارپوشه‌ی مجازی</b><span>ثبت و نگهداری همه‌ی فعالیت‌ها برای بهره‌گیری در سنجش پایانی.</span></div>
+    <div class="card top-ochre"><b>خودسنجی</b><span>در قالب صوت، فیلم، تصویر یا متن.</span></div>
+    <div class="card top-ochre"><b>والدین‌سنجی</b><span>بازخورد خانواده از مشارکت فرزند در یادگیری مجازی.</span></div>
+    <div class="card top-rust"><b>بازخورد صوتی</b><span>برای دانش‌آموزی که هنوز توانایی خواندن ندارد، به‌ویژه پایه‌ی اول در اوایل سال.</span></div>
+  </div>
+
+  <div class="grid g2">
+    <div class="do"><h3>انجام می‌دهیم</h3><ul>
+      <li>توجیه اولیا درباره‌ی هدف آزمون، پیش از برگزاری</li>
+      <li>اعتماد به دانش‌آموز، همراه با کنترل موردی</li>
+      <li>آزمون کتبی بدون نیاز به پرینت؛ فقط ارسال پاسخ</li>
+      <li>بازخورد اصلاحی بلافاصله و در گفت‌وگوی خصوصی</li>
+    </ul></div>
+    <div class="dont"><h3>انجام نمی‌دهیم</h3><ul>
+      <li>آزمون پی‌درپی و ارائه‌ی برنامه‌ی امتحانی</li>
+      <li>استفاده‌ی افراطی از استیکر و کلمات تأییدی</li>
+      <li>بازخورد یکسان برای همه در همه‌ی موقعیت‌ها</li>
+      <li>نوشتن مقیاس‌ها (خ‌خ، خ، ق‌ق، ن‌ت) در بررسی تکالیف</li>
+    </ul></div>
+  </div>
+</section>
+
+<!-- ۱۲ -->
+<section>
+  <div class="hd"><div class="num">۱۲</div><h2>پرسش‌های پرتکرار</h2></div>
+
+  <div class="grid g2">
+    <div class="qa"><b>جدول توصیف عملکرد برای کدام آزمون‌ها الزامی است؟</b>
+      <p>برای آزمونک و آزمون عملکردی. در آزمون تراکمی، به تشخیص معلم، جدول یا بازخورد توصیفی.</p></div>
+    <div class="qa"><b>درس هنر چگونه ارزشیابی می‌شود؟</b>
+      <p>فعالیت‌های عملی مثل موسیقی و نمایش با چک‌لیست؛ کارهای کتبی مثل نقاشی با جدول توصیف عملکرد یا بازخورد کتبی در پوشه‌ی کار.</p></div>
+    <div class="qa"><b>آیا دفتر املا همان پوشه‌ی کار است؟</b>
+      <p>فقط وقتی بازخورد مؤثر داشته باشد. پیشنهاد: پایان هر فصل، املای معلم‌ساخته با جدول توصیف عملکرد در پوشه قرار گیرد.</p></div>
+    <div class="qa"><b>هدیه‌های آسمان آزمون مداد کاغذی دارد؟</b>
+      <p>بهترین ابزار چک‌لیست است. برای پایه‌های چهارم تا ششم، اگر سؤالات هر سه حیطه‌ی دانش، نگرش و مهارت را بپوشاند اشکالی ندارد.</p></div>
+    <div class="qa"><b>در کلاس پرجمعیت چطور بازخورد بنویسیم؟</b>
+      <p>از جدول توصیف عملکرد با تیک استفاده کن. بازخورد کتبی کامل فقط برای دانش‌آموزانی که عملکرد موفق نداشته‌اند.</p></div>
+    <div class="qa"><b>تکلیف ترمیمی باید به برگه‌ی آزمون الصاق شود؟</b>
+      <p>الزامی نیست؛ ممکن است شفاهی باشد. اگر به یادگیری کمک می‌کند، الصاق شود.</p></div>
+    <div class="qa"><b>آزمون تراکمی توصیه می‌شود؟</b>
+      <p>ساده‌ترین راه، آزمونک از هر درس است. در صورت صلاحدید معلم، تراکمی فصلی با یک موضوع مانعی ندارد.</p></div>
+    <div class="qa"><b>کار و فناوری ششم چطور سنجیده می‌شود؟</b>
+      <p>مبتنی بر شایستگی و به‌صورت عملی؛ هم فرایند اجرا و هم فرآورده‌ی نهایی.</p></div>
+  </div>
+</section>
+
+<!-- ۱۳ -->
+<section>
+  <div class="hd"><div class="num">۱۳</div><h2>واژه‌نامه‌ی کوتاه</h2></div>
+
+  <div class="grid g3">
+    <div class="card"><b>ارزشیابی تکوینی</b><span>سنجش در جریان آموزش، برای اصلاح همان آموزش</span></div>
+    <div class="card"><b>ارزشیابی آغازین</b><span>سنجش پیش‌نیازها پیش از درس جدید</span></div>
+    <div class="card"><b>سطح قابل قبول</b><span>اطمینان معلم از تحقق اهداف اساسی درس</span></div>
+    <div class="card"><b>حیطه‌های یادگیری</b><span>شناختی، عاطفی، مهارتی</span></div>
+    <div class="card"><b>هدف رفتاری</b><span>رفتار قابل مشاهده در پایان آموزش</span></div>
+    <div class="card"><b>رفتار ورودی</b><span>دانش و مهارت پیش‌نیاز درس جدید</span></div>
+    <div class="card"><b>بافت مسئله</b><span>موقعیت واقعی که آزمون عملکردی با آن آغاز می‌شود</span></div>
+    <div class="card"><b>شایستگی</b><span>به‌کارگیری هم‌زمان دانش، مهارت و نگرش</span></div>
+    <div class="card"><b>نمونه کار</b><span>محصولی که مهارت دانش‌آموز را نشان می‌دهد</span></div>
+    <div class="card"><b>نمون‌برگ الف</b><span>فرم رسمی کارنامه‌ی توصیفی</span></div>
+    <div class="card"><b>واقعه‌نگاری</b><span>ثبت محرمانه‌ی رویداد: توصیف، تفسیر، راهکار</span></div>
+    <div class="card"><b>درس‌پژوهی</b><span>مطالعه‌ی مشارکتی معلمان روی یک درس واقعی</span></div>
+    <div class="card"><b>وقفه‌ی تحصیلی</b><span>حضور کمتر از ۸۰٪ با عذر موجه</span></div>
+    <div class="card"><b>ترک تحصیل</b><span>حضور کمتر از ۸۰٪ بدون عذر موجه</span></div>
+    <div class="card"><b>جهش تحصیلی</b><span>ارتقای یک پایه با کسب «خیلی خوب» در همه‌ی دروس</span></div>
+  </div>
+</section>
+
+<!-- ۱۴ -->
+<section>
+  <div class="hd"><div class="num">۱۴</div><h2>جمع‌بندی: بکن / نکن</h2></div>
+
+  <div class="grid g2">
+    <div class="do"><h3>انجام می‌دهیم</h3><ul>
+      <li>تنوع ابزار، متناسب با هدف هر درس</li>
+      <li>بازخورد به‌موقع و بیشتر شفاهی</li>
+      <li>تفاوت‌های فردی در تکلیف و بازخورد</li>
+      <li>پوشه‌ی کار با امضا، بازخورد و تاریخ</li>
+      <li>ثبت به‌موقع کارنامه و اطلاع‌رسانی به اولیا</li>
+      <li>دفتر کلاسی و پوشه‌ی کار به‌عنوان ابزار، نه هدف</li>
+    </ul></div>
+    <div class="dont"><h3>انجام نمی‌دهیم</h3><ul>
+      <li>ارائه‌ی برنامه‌ی امتحانی</li>
+      <li>یک نوع آزمون در تمام سال</li>
+      <li>چند ابزار هم‌زمان برای سنجش یک هدف</li>
+      <li>گذاشتن همه‌ی آزمون‌ها و تکالیف در پوشه‌ی کار</li>
+      <li>تکلیف رونویسی، تکلیف آدینه، تکلیف به‌عنوان تنبیه</li>
+      <li>کتاب کمک‌درسی تحمیلی</li>
+    </ul></div>
+  </div>
+</section>
+
+<footer>
+  مدیریت آموزش و پرورش مبارکه · معاونت آموزش ابتدایی · کارگروه کیفیت‌بخشی آموزش ابتدایی<br>
+  تهیه و تنظیم: یوسف احمدپور، سرکارگروه کیفیت‌بخشی آموزش ابتدایی
+</footer>
+
+</div>
+</body>
+</html>

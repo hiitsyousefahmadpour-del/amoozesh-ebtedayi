@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>سال اول تو — راهنمای آموزگار تازه‌کار</title>
+<meta name="description" content="آنچه در سال اول تجربه می‌کنی، چه انتظاری از خودت داشته باشی، و چطور کمک بگیری.">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-font-face.css">
+<style>
+:root{
+  --primary:#00696A; --on-primary:#fff;
+  --primary-container:#9CF1F0; --on-primary-container:#002020;
+  --secondary-container:#CCE8E7; --on-secondary-container:#051F1F;
+  --tertiary-container:#FFE08D; --on-tertiary-container:#261A00;
+  --error-container:#FFDAD6; --on-error-container:#410002;
+  --surface:#F4FBFA; --on-surface:#161D1D; --on-surface-variant:#3F4948;
+  --s-low:#EEF5F4; --s-cont:#E8EFEE; --outline:#BEC9C8;
+  --r-s:8px; --r-m:12px; --r-l:16px; --r-xl:28px;
+}
+@media (prefers-color-scheme:dark){
+  :root{
+    --primary:#80D5D4; --on-primary:#003737;
+    --primary-container:#004F50; --on-primary-container:#9CF1F0;
+    --secondary-container:#324B4B; --on-secondary-container:#CCE8E7;
+    --tertiary-container:#5C4300; --on-tertiary-container:#FFE08D;
+    --error-container:#93000A; --on-error-container:#FFDAD6;
+    --surface:#0E1514; --on-surface:#DDE4E3; --on-surface-variant:#BEC9C8;
+    --s-low:#171D1D; --s-cont:#1B2121; --outline:#3F4948;
+  }
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:16px}
+body{margin:0;background:var(--surface);color:var(--on-surface);
+  font-family:Vazirmatn,"IRANSans",Tahoma,sans-serif;font-size:16px;line-height:1.85}
+.wrap{max-width:900px;margin:0 auto;padding:0 16px 56px}
+.material-symbols-outlined{font-family:'Material Symbols Outlined';font-size:22px;
+  line-height:1;display:inline-block;direction:ltr;vertical-align:-4px}
+
+header.lh{background:var(--primary-container);color:var(--on-primary-container);
+  margin:0 -16px 22px;padding:18px 22px;
+  border-end-start-radius:var(--r-xl);border-end-end-radius:var(--r-xl)}
+.lh b{display:block;font-size:16px}
+.lh small{display:block;font-size:12.5px;opacity:.85}
+
+h1{font-size:clamp(1.7rem,1.3rem+2vw,2.5rem);font-weight:800;line-height:1.3;margin:14px 0 8px}
+.sub{color:var(--on-surface-variant);margin:0 0 22px}
+.toc{background:var(--s-low);border-radius:var(--r-l);padding:14px 18px;margin:0 0 30px}
+.toc b{display:block;font-size:14px;color:var(--on-surface-variant);margin-bottom:6px}
+.toc ol{margin:0;padding-inline-start:20px}
+.toc a{color:var(--primary);text-decoration:none}
+.toc a:hover{text-decoration:underline}
+
+section{margin:0 0 44px}
+h2{font-size:clamp(1.3rem,1.1rem+1vw,1.75rem);font-weight:800;line-height:1.4;
+  margin:0 0 6px;padding-bottom:8px;border-bottom:3px solid var(--primary-container)}
+.kicker{display:inline-block;background:var(--tertiary-container);
+  color:var(--on-tertiary-container);border-radius:var(--r-s);padding:3px 12px;
+  font-size:13px;font-weight:600;margin:0 0 10px}
+h3{font-size:1.15rem;font-weight:700;margin:26px 0 8px}
+h4{font-size:1rem;font-weight:700;margin:18px 0 6px;color:var(--on-surface-variant)}
+p{margin:0 0 13px}
+ul,ol{padding-inline-start:20px;margin:8px 0}
+li{margin-bottom:7px}
+blockquote{margin:14px 0;padding:12px 18px;background:var(--s-cont);
+  border-radius:var(--r-m);font-weight:600;color:var(--on-surface)}
+
+.t-wrap{overflow-x:auto;border:1px solid var(--outline);border-radius:var(--r-l);margin:16px 0}
+table{width:100%;border-collapse:collapse;font-size:14.5px;min-width:480px;background:var(--surface)}
+th,td{padding:11px 14px;text-align:right;border-bottom:1px solid var(--outline);vertical-align:top}
+thead th{background:var(--s-cont);font-weight:700}
+tbody tr:last-child td,tbody tr:last-child th{border-bottom:none}
+tbody th{font-weight:600;white-space:nowrap}
+
+.grid{display:grid;gap:12px;grid-template-columns:1fr}
+@media (min-width:640px){.grid.g2{grid-template-columns:1fr 1fr}
+  .grid.g3{grid-template-columns:repeat(3,1fr)}}
+.card{background:var(--s-low);border-radius:var(--r-l);padding:16px 18px}
+.card b{display:block;font-size:15.5px;margin-bottom:4px}
+.card span{font-size:14px;color:var(--on-surface-variant)}
+
+.note{background:var(--tertiary-container);color:var(--on-tertiary-container);
+  border-radius:var(--r-l);padding:14px 18px;margin:18px 0}
+.note.brand{background:var(--primary-container);color:var(--on-primary-container)}
+.note.warn{background:var(--error-container);color:var(--on-error-container)}
+.note p:last-child{margin-bottom:0}
+
+.phase{background:var(--s-low);border-radius:var(--r-l);padding:18px 20px;margin:14px 0;
+  border-inline-start:6px solid var(--primary)}
+.phase .tag{display:inline-block;background:var(--secondary-container);
+  color:var(--on-secondary-container);border-radius:var(--r-s);padding:2px 12px;
+  font-size:13px;font-weight:700;margin-bottom:8px}
+.phase h3{margin:0 0 6px}
+.phase .goal{color:var(--on-surface-variant);font-size:14.5px;margin:0 0 10px}
+
+.flow{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin:14px 0;font-size:14.5px}
+.flow span{background:var(--secondary-container);color:var(--on-secondary-container);
+  border-radius:999px;padding:6px 14px;font-weight:600}
+.flow i{font-style:normal;color:var(--primary);font-weight:700}
+
+footer{margin-top:40px;border-top:1px solid var(--outline);padding-top:16px;
+  text-align:center;color:var(--on-surface-variant);font-size:13.5px;line-height:1.9}
+
+@page{size:A4;margin:14mm}
+@media print{
+  body{background:#fff;color:#000;font-size:11pt}
+  header.lh{background:#fff;color:#000;border-bottom:2px solid #000;border-radius:0;
+    margin:0 0 14px;padding:8px 0}
+  .toc{break-after:page}
+  section{break-inside:auto}
+  .card,.note,.phase,.t-wrap,blockquote{break-inside:avoid}
+  h2{break-after:avoid}
+}
+
+.audience{display:inline-block;background:var(--primary-container);
+  color:var(--on-primary-container);border-radius:999px;padding:5px 16px;
+  font-size:13.5px;font-weight:700;margin-bottom:10px}
+.script{background:var(--s-cont);border-radius:var(--r-m);padding:14px 18px;margin:12px 0}
+.script p{margin:0 0 8px}
+.script p:last-child{margin:0}
+.script b{color:var(--primary)}
+.form{border:2px dashed var(--outline);border-radius:var(--r-l);padding:16px 20px;margin:16px 0}
+.form .row{display:flex;justify-content:space-between;gap:12px;
+  border-bottom:1px dotted var(--outline);padding:8px 0;font-size:15px}
+.form .row:last-child{border-bottom:none}
+.form .row span{color:var(--on-surface-variant)}
+.check{list-style:none;padding:0;margin:12px 0}
+.check li{position:relative;padding-inline-start:30px;margin-bottom:9px}
+.check li::before{content:"";position:absolute;inset-inline-start:0;top:7px;width:16px;height:16px;
+  border:2px solid var(--on-surface-variant);border-radius:4px}
+</style>
+</head>
+<body><div class="wrap">
+<header class="lh">
+  <b>مدیریت آموزش و پرورش مبارکه</b>
+  <small>معاونت آموزش ابتدایی · کارگروه کیفیت‌بخشی آموزش ابتدایی</small>
+</header>
+<p class="audience">مخاطب: آموزگار تازه‌کار</p>
+<h1>سال اول تو</h1>
+<p class="sub">این سند قرار نیست به تو بگوید چه معلم خوبی باش. قرار است بگوید در سال اول چه چیزی طبیعی است، از خودت چه انتظاری داشته باشی، و وقتی گیر کردی چه کنی.</p>
+<nav class="toc" aria-label="فهرست"><b>در این سند</b><ol><li><a href="#tabiei">این احساس‌ها طبیعی است</a></li><li><a href="#hafte-aval">هفته‌ی اول: فقط کلاس را بساز</a></li><li><a href="#entezar">از خودت چه انتظاری داشته باش</a></li><li><a href="#komak">چطور کمک بگیری</a></li><li><a href="#marz">مرزهای حرفه‌ای</a></li><li><a href="#form">خودسنجی هفتگی</a></li><li><a href="#panj">پنج چیزی که نباید انتظار داشته باشی</a></li></ol></nav>
+
+<section id="tabiei">
+  <p class="kicker">بخش یکم</p>
+  <h2>این احساس‌ها طبیعی است</h2>
+  <p>پیش از هر توصیه‌ای، یک واقعیت: آنچه این روزها حس می‌کنی، تجربه‌ی تقریباً همه‌ی
+  آموزگاران در سال اول است. مسئله‌ی تو «کمبود سواد» نیست؛ این است که از روز اول همان
+  مسئولیتی را گرفته‌ای که یک معلم باتجربه دارد، اما هنوز روتین‌ها و تجربه‌ات ساخته نشده است.</p>
+
+  <div class="t-wrap">
+    <table>
+      <thead><tr><th scope="col">اگر این را حس می‌کنی</th><th scope="col">معنای واقعی‌اش این است</th></tr></thead>
+      <tbody>
+        <tr><th scope="row">«اگر نتوانم کلاس را کنترل کنم چه؟»</th><td>هنوز روتین‌های کلاس ساخته نشده‌اند؛ این مهارت است، نه استعداد.</td></tr>
+        <tr><th scope="row">«اصلاً من بلدم معلم باشم؟»</th><td>تو درباره‌ی تدریس می‌دانی؛ چیزی که نداری تجربه‌ی موقعیت‌های واقعی است.</td></tr>
+        <tr><th scope="row">«کارهایم هیچ‌وقت تمام نمی‌شود.»</th><td>کاری که برای همکار باتجربه ۲۰ دقیقه است، برای تو یک ساعت است. این طبیعی است و کوتاه می‌شود.</td></tr>
+        <tr><th scope="row">«با این دانش‌آموز چه کنم؟»</th><td>پرسش درستی است؛ و پاسخش را تنهایی پیدا نمی‌کنی، با کمک پیدا می‌کنی.</td></tr>
+        <tr><th scope="row">«اگر والدین مرا زیر سؤال ببرند چه؟»</th><td>گفت‌وگوی دشوار یک مهارت قابل تمرین است، نه آزمون شخصیت.</td></tr>
+        <tr><th scope="row">«اگر بچه‌ای به خاطر من یاد نگیرد چه؟»</th><td>این نگرانی نشانه‌ی وجدان حرفه‌ای توست؛ فقط نباید به فلج‌شدن منجر شود.</td></tr>
+        <tr><th scope="row">«می‌فهمند که خیلی چیزها را نمی‌دانم؟»</th><td>همه می‌دانند سال اولت است. انتظار کسی این نیست که همه‌چیز را بدانی.</td></tr>
+        <tr><th scope="row">«چرا در خانه هم ذهنم در کلاس است؟»</th><td>مرز حرفه‌ای هنوز شکل نگرفته؛ ساختنش بخشی از کار است، نه ضعف.</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <blockquote>ترس اصلی سال اول معمولاً «نمی‌توانم درس بدهم» نیست؛
+  «نکند موقعیتی پیش بیاید که ندانم چه کنم» است.</blockquote>
+  <p>و همین با تجربه تغییر می‌کند. بیشترِ موقعیت‌هایی که امروز نگرانت می‌کنند،
+  تا بهمن به روتین تبدیل می‌شوند.</p>
+</section>
+
+<section id="hafte-aval">
+  <p class="kicker">بخش دوم</p>
+  <h2>هفته‌ی اول: فقط کلاس را بساز</h2>
+  <p>هدف این دو هفته «بی‌نقص تدریس کردن» نیست. هدف، ساختن محیطی قابل پیش‌بینی، امن و
+  اداره‌پذیر است. اگر این را بسازی، بقیه‌ی سال روی آن سوار می‌شود.</p>
+
+  <div class="grid g2">
+    <div class="card"><b>۱. شروع کلاس</b><span>دانش‌آموز وقتی وارد می‌شود دقیقاً چه می‌کند؟ کیف کجا می‌رود؟ تکلیف کجا گذاشته می‌شود؟</span></div>
+    <div class="card"><b>۲. انتقال بین فعالیت‌ها</b><span>بیشتر آشفتگی‌های کلاس ابتدایی دقیقاً در همین فاصله‌ها اتفاق می‌افتد، نه وسط درس.</span></div>
+    <div class="card"><b>۳. گرفتن توجه کلاس</b><span>یک علامت ثابت داشته باش و تا خرداد عوضش نکن؛ نه «بچه‌ها… بچه‌ها… ساکت…».</span></div>
+    <div class="card"><b>۴. آموزش صریح روتین‌ها</b><span>روتین را فقط اعلام نکن؛ آموزش بده: توضیح ← مدل‌سازی ← تمرین ← بازخورد ← تمرین دوباره.</span></div>
+    <div class="card"><b>۵. پاسخ به رفتار نامناسب</b><span>سه سطح را از قبل برای خودت روشن کن: خفیف ← یادآوری کوتاه · تکراری ← مداخله‌ی مشخص · جدی ← پروتکل مدرسه.</span></div>
+    <div class="card"><b>و یک قاعده</b><span>روز اول درس نداریم. شروع کتاب در روز اول، رایج‌ترین اشتباه سال اول است.</span></div>
+  </div>
+
+  <div class="note brand">
+    <p><b>چرا سطح‌بندی رفتار از قبل مهم است؟</b> چون در لحظه‌ی بحران فرصت فکر کردن نداری.
+    اگر از قبل بدانی برای هر سطح چه می‌کنی، مجبور نمی‌شوی وسط کلاس واکنش اختراع کنی.</p>
+  </div>
+</section>
+
+<section id="entezar">
+  <p class="kicker">بخش سوم</p>
+  <h2>از خودت در هر مقطع چه انتظاری داشته باش</h2>
+  <p>یکی از منابع اضطراب این است که آموزگار تازه‌کار از خودش انتظارِ ماه ششم را در هفته‌ی اول دارد.
+  این جدول را به‌عنوان یک مسیر طبیعی ببین:</p>
+  <div class="t-wrap">
+    <table>
+      <thead><tr><th scope="col">مقطع</th><th scope="col">پرسش طبیعی تو</th><th scope="col">موفقیت در این مقطع یعنی</th></tr></thead>
+      <tbody>
+        <tr><th scope="row">هفته‌ی ۱ و ۲</th><td>چطور کلاس را اداره کنم؟</td><td>روتین‌ها جا افتاده‌اند و بچه‌ها می‌دانند چه انتظاری از آن‌ها هست.</td></tr>
+        <tr><th scope="row">هفته‌ی ۳ تا ۶</th><td>با رفتارهای دشوار چه کنم؟</td><td>برای دو سه رفتار پرتکرار کلاست، یک پاسخ مشخص داری.</td></tr>
+        <tr><th scope="row">ماه دوم</th><td>چرا بعضی بچه‌ها یاد نگرفتند؟</td><td>در همان جلسه می‌فهمی چه کسی یاد گرفته و چه کسی نه.</td></tr>
+        <tr><th scope="row">ماه سوم</th><td>با والدین چه کنم؟</td><td>یک گفت‌وگوی دشوار را بدون دفاعی‌شدن اداره می‌کنی.</td></tr>
+        <tr><th scope="row">پایان صد روز</th><td>من چه نوع معلمی هستم؟</td><td>نقاط قوتت را می‌شناسی و می‌دانی چه چیزی باید رشد کند.</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p>اگر پرسش ذهنی‌ات از «چطور کلاس را ساکت کنم» به «چرا این بچه یاد نگرفت» تغییر کرده،
+  یعنی داری درست جلو می‌روی.</p>
+</section>
+
+<section id="komak">
+  <p class="kicker">بخش چهارم</p>
+  <h2>چطور کمک بگیری</h2>
+  <p>مهم‌ترین انتظار ما از تو همین است: <b>زود بپرس</b>. مشکلی که مهر با یک تماس حل می‌شود،
+  اگر پنهان بماند بهمن تبدیل به پرونده می‌شود. پرسیدن در سال اول نشانه‌ی ضعف نیست؛
+  نپرسیدن حرفه‌ای نیست.</p>
+
+  <h3>از چه کسی چه بپرس</h3>
+  <div class="t-wrap">
+    <table>
+      <thead><tr><th scope="col">مخاطب</th><th scope="col">موضوع</th></tr></thead>
+      <tbody>
+        <tr><th scope="row">همراه حرفه‌ای (منتور)</th><td>هر چیزی که در کلاس گیرت انداخته؛ اولین جایی که باید سراغش بروی</td></tr>
+        <tr><th scope="row">مدیر</th><td>ابلاغ، مرخصی، مسائل انضباطی جدی، ارتباط با اداره</td></tr>
+        <tr><th scope="row">معاون آموزشی</th><td>سناد، کارنامه، برنامه‌ی هفتگی، فرم‌ها</td></tr>
+        <tr><th scope="row">همکار هم‌پایه</th><td>سرعت پیشروی، نمونه تکلیف، تجربه‌ی کلاسی</td></tr>
+        <tr><th scope="row">سرگروه آموزشی</th><td>بودجه‌بندی، بخش‌نامه، ابهام در ارزشیابی</td></tr>
+        <tr><th scope="row">مشاور مدرسه</th><td>دانش‌آموزی با مشکل یادگیری یا رفتاری مستمر</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h3>چطور سؤالت را بپرسی که جواب به‌دردبخور بگیری</h3>
+  <p>سؤال مبهم، جواب مبهم می‌گیرد. به‌جای «کلاسم شلوغ است، چه کار کنم؟» این‌طور بپرس:</p>
+  <div class="script">
+    <p><b>موقعیت:</b> «وقتی از ریاضی به فارسی می‌رویم، حدود پنج دقیقه کلاس به هم می‌ریزد.»</p>
+    <p><b>آنچه امتحان کرده‌ام:</b> «گفتم کتاب‌ها را جمع کنند، ولی همه با هم بلند می‌شوند.»</p>
+    <p><b>درخواست مشخص:</b> «می‌شود یک بار ببینی من این انتقال را چطور انجام می‌دهم؟»</p>
+  </div>
+  <p>این سه جمله، تفاوت میان یک توصیه‌ی کلی و یک کمک واقعی است.</p>
+</section>
+
+<section id="marz">
+  <p class="kicker">بخش پنجم</p>
+  <h2>مرزهای حرفه‌ای</h2>
+  <p>آموزگار متعهد به‌راحتی در این زنجیره می‌افتد: «باید برای همه بهترین کار را بکنم» ←
+  «پس باید امشب همه‌ی تکالیف را ببینم» ← «باید جواب همه‌ی پیام‌ها را همین امشب بدهم».
+  و سرانجام تعهد حرفه‌ای به کمال‌گرایی تبدیل می‌شود. این‌ها را به خودت یادآوری کن:</p>
+  <ul>
+    <li>لازم نیست امشب همه‌چیز کامل شود.</li>
+    <li>لازم نیست پاسخ هر پیام فوراً داده شود؛ ساعت پاسخگویی‌ات را اعلام کن و به آن پایبند باش.</li>
+    <li>لازم نیست مشکل هر دانش‌آموز را شخصاً و یک‌تنه حل کنی.</li>
+    <li>کمک خواستن نشانه‌ی بی‌کفایتی نیست.</li>
+    <li>یک درس متوسط، شکست حرفه‌ای نیست.</li>
+    <li>اشتباه کردن بخشی از یادگیری حرفه‌ای است، نه نشانه‌ی بی‌استعدادی.</li>
+  </ul>
+  <div class="note">
+    <p>معلمی که تا آذر تمام شده باشد، در خرداد چیزی برای بچه‌ها ندارد.
+    مراقبت از خودت بخشی از کار حرفه‌ای است، نه چیزی جدا از آن.</p>
+  </div>
+</section>
+
+<section id="form">
+  <p class="kicker">بخش ششم</p>
+  <h2>خودسنجی هفتگی</h2>
+  <p>پایان هر هفته، یک دقیقه وقت بگذار و از صفر تا ده به خودت نمره بده.
+  هدف قضاوت نیست؛ دیدن روند است. اگر عددی دو هفته‌ی پیاپی پایین ماند، همان را با منتورت مطرح کن.</p>
+  <div class="form">
+    <div class="row"><span>احساس تسلط بر کلاس</span><span>…… / ۱۰</span></div>
+    <div class="row"><span>استرس کاری</span><span>…… / ۱۰</span></div>
+    <div class="row"><span>وضوح وظایف (می‌دانم از من چه می‌خواهند)</span><span>…… / ۱۰</span></div>
+    <div class="row"><span>احساس حمایت</span><span>…… / ۱۰</span></div>
+    <div class="row"><span>اطمینان به توانایی تدریسم</span><span>…… / ۱۰</span></div>
+    <div class="row"><span>این هفته چه چیزی خوب پیش رفت؟</span><span>………………………</span></div>
+    <div class="row"><span>سخت‌ترین لحظه چه بود؟</span><span>………………………</span></div>
+    <div class="row"><span>هفته‌ی بعد فقط چه چیزی را تغییر می‌دهم؟</span><span>………………………</span></div>
+  </div>
+  <p><b>قاعده‌ی یک تغییر:</b> هر هفته فقط یک چیز را عوض کن. تغییر ده چیز هم‌زمان یعنی
+  نفهمیدن اینکه کدامش کار کرد.</p>
+</section>
+
+<section id="panj">
+  <p class="kicker">جمع‌بندی</p>
+  <h2>پنج چیزی که نباید از خودت انتظار داشته باشی</h2>
+  <ol>
+    <li>عملکرد ماه اولت شبیه معلم ده‌ساله باشد.</li>
+    <li>هیچ‌وقت صدایت بلند نشود و هیچ روزی از دستت در نرود.</li>
+    <li>همه‌ی سی دانش‌آموز هم‌زمان و هم‌سرعت یاد بگیرند.</li>
+    <li>پاسخ هر موقعیت را در لحظه بدانی.</li>
+    <li>بدون کمک گرفتن، همه‌چیز را خودت حل کنی.</li>
+  </ol>
+  <blockquote>سال اول، سالِ کامل بودن نیست؛ سالِ ساختن است.
+  هدف این نیست که هیچ‌وقت ندانی چه کنی؛ این است که وقتی ندانستی، بلد باشی
+  مسئله را بشناسی، کمک بگیری، راهی را امتحان کنی و دوباره بهتر عمل کنی.</blockquote>
+  <p>و این را یادت باشد: بچه‌های کلاست سال‌ها بعد بیشترِ آنچه امسال تدریس کردی را فراموش می‌کنند،
+  اما یادشان می‌ماند در کلاس تو چه حسی داشتند. آن بخش کار، بیش از تجربه، به توجه نیاز دارد
+  و آن را از همین امروز می‌توانی انجام دهی.</p>
+</section>
+
+<footer>
+  مدیریت آموزش و پرورش مبارکه · معاونت آموزش ابتدایی · کارگروه کیفیت‌بخشی آموزش ابتدایی<br>
+  تهیه و تنظیم: یوسف احمدپور — سرگروه آموزشی دوره‌ی ابتدایی
+</footer>
+</div></body></html>

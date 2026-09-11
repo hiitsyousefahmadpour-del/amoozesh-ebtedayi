@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>همراه آموزگار تازه‌کار — راهنمای منتور</title>
+<meta name="description" content="نقش منتور، چرخه‌ی مشاهده و بازخورد، تقویم صد روز و گفت‌وگوهای دشوار.">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-font-face.css">
+<style>
+:root{
+  --primary:#00696A; --on-primary:#fff;
+  --primary-container:#9CF1F0; --on-primary-container:#002020;
+  --secondary-container:#CCE8E7; --on-secondary-container:#051F1F;
+  --tertiary-container:#FFE08D; --on-tertiary-container:#261A00;
+  --error-container:#FFDAD6; --on-error-container:#410002;
+  --surface:#F4FBFA; --on-surface:#161D1D; --on-surface-variant:#3F4948;
+  --s-low:#EEF5F4; --s-cont:#E8EFEE; --outline:#BEC9C8;
+  --r-s:8px; --r-m:12px; --r-l:16px; --r-xl:28px;
+}
+@media (prefers-color-scheme:dark){
+  :root{
+    --primary:#80D5D4; --on-primary:#003737;
+    --primary-container:#004F50; --on-primary-container:#9CF1F0;
+    --secondary-container:#324B4B; --on-secondary-container:#CCE8E7;
+    --tertiary-container:#5C4300; --on-tertiary-container:#FFE08D;
+    --error-container:#93000A; --on-error-container:#FFDAD6;
+    --surface:#0E1514; --on-surface:#DDE4E3; --on-surface-variant:#BEC9C8;
+    --s-low:#171D1D; --s-cont:#1B2121; --outline:#3F4948;
+  }
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:16px}
+body{margin:0;background:var(--surface);color:var(--on-surface);
+  font-family:Vazirmatn,"IRANSans",Tahoma,sans-serif;font-size:16px;line-height:1.85}
+.wrap{max-width:900px;margin:0 auto;padding:0 16px 56px}
+.material-symbols-outlined{font-family:'Material Symbols Outlined';font-size:22px;
+  line-height:1;display:inline-block;direction:ltr;vertical-align:-4px}
+
+header.lh{background:var(--primary-container);color:var(--on-primary-container);
+  margin:0 -16px 22px;padding:18px 22px;
+  border-end-start-radius:var(--r-xl);border-end-end-radius:var(--r-xl)}
+.lh b{display:block;font-size:16px}
+.lh small{display:block;font-size:12.5px;opacity:.85}
+
+h1{font-size:clamp(1.7rem,1.3rem+2vw,2.5rem);font-weight:800;line-height:1.3;margin:14px 0 8px}
+.sub{color:var(--on-surface-variant);margin:0 0 22px}
+.toc{background:var(--s-low);border-radius:var(--r-l);padding:14px 18px;margin:0 0 30px}
+.toc b{display:block;font-size:14px;color:var(--on-surface-variant);margin-bottom:6px}
+.toc ol{margin:0;padding-inline-start:20px}
+.toc a{color:var(--primary);text-decoration:none}
+.toc a:hover{text-decoration:underline}
+
+section{margin:0 0 44px}
+h2{font-size:clamp(1.3rem,1.1rem+1vw,1.75rem);font-weight:800;line-height:1.4;
+  margin:0 0 6px;padding-bottom:8px;border-bottom:3px solid var(--primary-container)}
+.kicker{display:inline-block;background:var(--tertiary-container);
+  color:var(--on-tertiary-container);border-radius:var(--r-s);padding:3px 12px;
+  font-size:13px;font-weight:600;margin:0 0 10px}
+h3{font-size:1.15rem;font-weight:700;margin:26px 0 8px}
+h4{font-size:1rem;font-weight:700;margin:18px 0 6px;color:var(--on-surface-variant)}
+p{margin:0 0 13px}
+ul,ol{padding-inline-start:20px;margin:8px 0}
+li{margin-bottom:7px}
+blockquote{margin:14px 0;padding:12px 18px;background:var(--s-cont);
+  border-radius:var(--r-m);font-weight:600;color:var(--on-surface)}
+
+.t-wrap{overflow-x:auto;border:1px solid var(--outline);border-radius:var(--r-l);margin:16px 0}
+table{width:100%;border-collapse:collapse;font-size:14.5px;min-width:480px;background:var(--surface)}
+th,td{padding:11px 14px;text-align:right;border-bottom:1px solid var(--outline);vertical-align:top}
+thead th{background:var(--s-cont);font-weight:700}
+tbody tr:last-child td,tbody tr:last-child th{border-bottom:none}
+tbody th{font-weight:600;white-space:nowrap}
+
+.grid{display:grid;gap:12px;grid-template-columns:1fr}
+@media (min-width:640px){.grid.g2{grid-template-columns:1fr 1fr}
+  .grid.g3{grid-template-columns:repeat(3,1fr)}}
+.card{background:var(--s-low);border-radius:var(--r-l);padding:16px 18px}
+.card b{display:block;font-size:15.5px;margin-bottom:4px}
+.card span{font-size:14px;color:var(--on-surface-variant)}
+
+.note{background:var(--tertiary-container);color:var(--on-tertiary-container);
+  border-radius:var(--r-l);padding:14px 18px;margin:18px 0}
+.note.brand{background:var(--primary-container);color:var(--on-primary-container)}
+.note.warn{background:var(--error-container);color:var(--on-error-container)}
+.note p:last-child{margin-bottom:0}
+
+.phase{background:var(--s-low);border-radius:var(--r-l);padding:18px 20px;margin:14px 0;
+  border-inline-start:6px solid var(--primary)}
+.phase .tag{display:inline-block;background:var(--secondary-container);
+  color:var(--on-secondary-container);border-radius:var(--r-s);padding:2px 12px;
+  font-size:13px;font-weight:700;margin-bottom:8px}
+.phase h3{margin:0 0 6px}
+.phase .goal{color:var(--on-surface-variant);font-size:14.5px;margin:0 0 10px}
+
+.flow{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin:14px 0;font-size:14.5px}
+.flow span{background:var(--secondary-container);color:var(--on-secondary-container);
+  border-radius:999px;padding:6px 14px;font-weight:600}
+.flow i{font-style:normal;color:var(--primary);font-weight:700}
+
+footer{margin-top:40px;border-top:1px solid var(--outline);padding-top:16px;
+  text-align:center;color:var(--on-surface-variant);font-size:13.5px;line-height:1.9}
+
+@page{size:A4;margin:14mm}
+@media print{
+  body{background:#fff;color:#000;font-size:11pt}
+  header.lh{background:#fff;color:#000;border-bottom:2px solid #000;border-radius:0;
+    margin:0 0 14px;padding:8px 0}
+  .toc{break-after:page}
+  section{break-inside:auto}
+  .card,.note,.phase,.t-wrap,blockquote{break-inside:avoid}
+  h2{break-after:avoid}
+}
+
+.audience{display:inline-block;background:var(--primary-container);
+  color:var(--on-primary-container);border-radius:999px;padding:5px 16px;
+  font-size:13.5px;font-weight:700;margin-bottom:10px}
+.script{background:var(--s-cont);border-radius:var(--r-m);padding:14px 18px;margin:12px 0}
+.script p{margin:0 0 8px}
+.script p:last-child{margin:0}
+.script b{color:var(--primary)}
+.form{border:2px dashed var(--outline);border-radius:var(--r-l);padding:16px 20px;margin:16px 0}
+.form .row{display:flex;justify-content:space-between;gap:12px;
+  border-bottom:1px dotted var(--outline);padding:8px 0;font-size:15px}
+.form .row:last-child{border-bottom:none}
+.form .row span{color:var(--on-surface-variant)}
+.check{list-style:none;padding:0;margin:12px 0}
+.check li{position:relative;padding-inline-start:30px;margin-bottom:9px}
+.check li::before{content:"";position:absolute;inset-inline-start:0;top:7px;width:16px;height:16px;
+  border:2px solid var(--on-surface-variant);border-radius:4px}
+</style>
+</head>
+<body><div class="wrap">
+<header class="lh">
+  <b>مدیریت آموزش و پرورش مبارکه</b>
+  <small>معاونت آموزش ابتدایی · کارگروه کیفیت‌بخشی آموزش ابتدایی</small>
+</header>
+<p class="audience">مخاطب: منتور / همراه حرفه‌ای</p>
+<h1>همراه آموزگار تازه‌کار</h1>
+<p class="sub">راهنمای عملی منتور: چه بکنی، چه نکنی، در هر مقطع چه حمایتی بدهی، و چطور تشخیص بدهی چه کسی به کمک بیشتری نیاز دارد.</p>
+<nav class="toc" aria-label="فهرست"><b>در این سند</b><ol><li><a href="#naghsh">نقش تو چیست و چه نیست</a></li><li><a href="#charkhe">چرخه‌ی کاری تو</a></li><li><a href="#taghvim">تقویم صد روز از سمت تو</a></li><li><a href="#tashkhis">چه کسی حمایت بیشتری لازم دارد</a></li><li><a href="#goftogoo">سه گفت‌وگوی دشوار</a></li><li><a href="#marz-mentor">آنچه در حدود تو نیست</a></li><li><a href="#khat">پنج خط قرمز و چک‌لیست</a></li></ol></nav>
+
+<section id="naghsh">
+  <p class="kicker">بخش یکم</p>
+  <h2>نقش تو چیست و چه نیست</h2>
+  <p>مؤثرترین حمایت از آموزگار تازه‌کار، نه سخنرانی است و نه ارزیابی؛ یک <b>رابطه‌ی کاریِ
+  مستمر با چرخه‌ی مشخص</b> است. پیش از هر چیز، مرز نقش را روشن کن.</p>
+  <div class="grid g2">
+    <div class="card"><b>تو هستی</b>
+      <span>کسی که او می‌تواند بگوید «امروز نمی‌دانستم چه کار کنم» بدون ترس از قضاوت ·
+      کسی که با او یک مسئله را می‌بیند و یک راه‌حل را امتحان می‌کند ·
+      کسی که بازخورد مشخص و رشددهنده می‌دهد</span></div>
+    <div class="card"><b>تو نیستی</b>
+      <span>بازرس · ارزیاب صلاحیت · کسی که فهرست بلند نقاط ضعف تحویل می‌دهد ·
+      کسی که ماهی یک بار می‌پرسد «همه‌چیز خوبه؟»</span></div>
+  </div>
+  <div class="note warn">
+    <p><b>مهم‌ترین هشدار این سند:</b> اگر آموزگار تازه‌کار احساس کند کسی که باید از او کمک بگیرد
+    همان کسی است که درباره‌ی صلاحیتش قضاوت می‌کند، <b>مشکلات واقعی‌اش را پنهان می‌کند</b> —
+    و آن‌وقت تو فقط نسخه‌ی آراسته‌ی کلاس را می‌بینی. اگر قرار است کسی ارزیابی رسمی کند،
+    بهتر است آن فرد تو نباشی.</p>
+  </div>
+  <p>صرفِ داشتن عنوان «منتور» چیزی را تضمین نمی‌کند. آنچه اثر می‌گذارد
+  <b>کیفیت اجرا و نوع رابطه</b> است.</p>
+</section>
+
+<section id="charkhe">
+  <p class="kicker">بخش دوم</p>
+  <h2>چرخه‌ی کاری تو</h2>
+  <div class="flow">
+    <span>مسئله‌ی واقعی</span><i>←</i><span>گفت‌وگو</span><i>←</i><span>انتخاب یک راهبرد</span><i>←</i>
+    <span>اجرا</span><i>←</i><span>مشاهده</span><i>←</i><span>بازخورد</span><i>←</i><span>اصلاح</span>
+  </div>
+  <p>این چرخه از هر کارگاهی مؤثرتر است، به دو شرط: <b>تک‌کانونه</b> باشد و <b>تکرار</b> شود.</p>
+
+  <h3>تماس روزانه‌ی پنج‌دقیقه‌ای — دو هفته‌ی اول</h3>
+  <p>در چهارده روز نخست، هر روز یک تماس کوتاه. همین سه پرسش، نه بیشتر:</p>
+  <div class="script">
+    <p><b>۱.</b> امروز چه چیزی خوب پیش رفت؟</p>
+    <p><b>۲.</b> سخت‌ترین لحظه چه بود؟</p>
+    <p><b>۳.</b> فردا فقط چه چیزی را تغییر می‌دهی؟</p>
+  </div>
+  <p>نه تحلیل شخصیت، نه ده توصیه. <b>یک مسئله، یک تغییر.</b> اگر آموزگار سه مشکل مطرح کرد،
+  با هم مهم‌ترینش را انتخاب کنید و بقیه را بگذارید برای بعد.</p>
+
+  <h3>مشاهده‌ی تک‌کانونه</h3>
+  <p>بیست تا سی دقیقه کلاس را ببین، اما <b>فقط یک چیز</b> را — مثلاً «شروع فعالیت مستقل»
+  یا «انتقال بین دو درس». تیک زدن بیست‌وهفت مورد در یک فرم، هم تو را سطحی می‌کند
+  و هم او را می‌ترساند.</p>
+
+  <div class="form">
+    <p style="margin:0 0 10px"><b>فرم مشاهده‌ی تک‌کانونه</b></p>
+    <div class="row"><span>آموزگار / پایه</span><span>………………………</span></div>
+    <div class="row"><span>تاریخ و ساعت</span><span>………………………</span></div>
+    <div class="row"><span>کانون مشاهده (فقط یک مورد)</span><span>………………………</span></div>
+    <div class="row"><span>آنچه دیدم (توصیف، نه قضاوت)</span><span>………………………</span></div>
+    <div class="row"><span>آنچه خوب کار کرد</span><span>………………………</span></div>
+    <div class="row"><span>یک راهبرد برای هفته‌ی بعد</span><span>………………………</span></div>
+    <div class="row"><span>تاریخ مشاهده‌ی بعدی</span><span>………………………</span></div>
+  </div>
+
+  <h3>جلسه‌ی پانزده‌دقیقه‌ای پس از مشاهده</h3>
+  <div class="script">
+    <p><b>تو:</b> «به نظر خودت در آن ده دقیقه چه اتفاقی افتاد؟» <i>(اول او حرف بزند)</i></p>
+    <p><b>تو:</b> «چیزی که من دیدم این بود…» <i>(توصیف رفتار، نه ارزیابی شخص)</i></p>
+    <p><b>تو:</b> «کدام قسمتش را می‌خواهی هفته‌ی بعد تغییر بدهی؟»</p>
+    <p><b>تو:</b> «پس هفته‌ی بعد فقط همین یک راهبرد را امتحان کنیم و من دوباره می‌آیم می‌بینم.»</p>
+  </div>
+  <p>ترتیب مهم است: اگر تو اول نظرت را بگویی، گفت‌وگو به دفاع و توجیه تبدیل می‌شود.</p>
+</section>
+
+<section id="taghvim">
+  <p class="kicker">بخش سوم</p>
+  <h2>تقویم صد روز، از سمت تو</h2>
+  <p>قاعده‌ی کلی: <b>نیاز آموزشی را درست وقتی ارائه کن که او با مسئله‌ی واقعی‌اش مواجه شده است.</b>
+  بمباران هفته‌ی اول با کارگاه ارزشیابی و فناوری، اثر معکوس دارد.</p>
+  <div class="t-wrap">
+    <table>
+      <thead><tr><th scope="col">زمان</th><th scope="col">مسئله‌ی غالب او</th><th scope="col">کار تو</th></tr></thead>
+      <tbody>
+        <tr><th scope="row">پیش از شروع</th><td>ناشناخته‌ها</td><td>معرفی حضوری، دادن اطلاعات پایه، اعلام اینکه در دسترسی</td></tr>
+        <tr><th scope="row">روز ۱–۷</th><td>شوک واقعیت</td><td>تماس روزانه‌ی کوتاه با سه پرسش ثابت</td></tr>
+        <tr><th scope="row">روز ۸–۱۴</th><td>نظم و روتین</td><td>کمک به ساختن پنج روتین پایه؛ هنوز مشاهده نه</td></tr>
+        <tr><th scope="row">روز ۱۵–۲۱</th><td>رفتارهای دشوار</td><td>نخستین مشاهده‌ی تک‌کانونه + جلسه‌ی ۱۵ دقیقه‌ای</td></tr>
+        <tr><th scope="row">روز ۲۲–۳۰</th><td>احساس ناکارآمدی</td><td>کارگاه سناریو: هفت موقعیتی که دانشگاه آماده‌اش نکرده</td></tr>
+        <tr><th scope="row">روز ۳۱–۴۰</th><td>کیفیت تدریس</td><td>سنجش تکوینی ساده و طراحی درس واقع‌بینانه</td></tr>
+        <tr><th scope="row">روز ۴۱–۵۰</th><td>تفاوت دانش‌آموزان</td><td>مشاهده‌ی معکوس: او به کلاس یک معلم ماهر برود</td></tr>
+        <tr><th scope="row">روز ۵۱–۶۰</th><td>والدین</td><td>تمرین نقش گفت‌وگوی دشوار</td></tr>
+        <tr><th scope="row">روز ۶۱–۷۰</th><td>مسائل پیچیده</td><td>نشست حل مسئله با ۶ تا ۱۰ آموزگار تازه‌کار</td></tr>
+        <tr><th scope="row">روز ۷۱–۸۰</th><td>تثبیت عملکرد</td><td>کوچینگ دوم در سه محور: رابطه، سازمان‌دهی، کیفیت آموزش</td></tr>
+        <tr><th scope="row">روز ۸۱–۹۰</th><td>خستگی و کمال‌گرایی</td><td>گفت‌وگو درباره‌ی مرزهای حرفه‌ای</td></tr>
+        <tr><th scope="row">روز ۹۱–۱۰۰</th><td>هویت حرفه‌ای</td><td>بازاندیشی و تدوین برنامه‌ی رشد سال بعد</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h3>کارگاه سناریو حدود روز ۲۰</h3>
+  <p>سخنرانی نه؛ هفت موقعیت واقعی، در گروه‌های کوچک، با سه پرسش ثابت:
+  <b>اولین جمله‌ات چیست؟ اولین اقدام چیست؟ چه کاری نباید بکنی؟</b></p>
+  <ol>
+    <li>دانش‌آموزی می‌گوید «نمی‌نویسم».</li>
+    <li>دو دانش‌آموز یکدیگر را می‌زنند.</li>
+    <li>کودکی وسط کلاس گریه می‌کند.</li>
+    <li>دانش‌آموزی زود تمام کرده و بقیه را به هم می‌ریزد.</li>
+    <li>کلاس به فعالیتی که طراحی کرده‌ای علاقه نشان نمی‌دهد.</li>
+    <li>دانش‌آموزی می‌گوید «مامانم گفت شما اشتباه درس دادید».</li>
+    <li>فعالیت تمام نشده و زنگ می‌خورد.</li>
+  </ol>
+</section>
+
+<section id="tashkhis">
+  <p class="kicker">بخش چهارم</p>
+  <h2>چه کسی به حمایت بیشتری نیاز دارد</h2>
+  <p>حمایت یکسان برای همه، پاسخ درستی نیست. شواهد نشان می‌دهد کوچینگ برای آموزگارانی که
+  <b>هم‌زمان فشار روانی بالاتر و کلاس دشوارتری</b> دارند، بیشترین اثر را دارد.
+  پس باید بدانی کدام‌یک از افراد تحت حمایتت در این وضعیت‌اند.</p>
+
+  <div class="form">
+    <p style="margin:0 0 10px"><b>سنجش پایان هفته‌ی اول (خودگزارشیِ آموزگار، صفر تا ده)</b></p>
+    <div class="row"><span>احساس تسلط بر کلاس</span><span>…… / ۱۰</span></div>
+    <div class="row"><span>استرس کاری</span><span>…… / ۱۰</span></div>
+    <div class="row"><span>وضوح وظایف</span><span>…… / ۱۰</span></div>
+    <div class="row"><span>احساس حمایت</span><span>…… / ۱۰</span></div>
+    <div class="row"><span>اطمینان به توانایی تدریس</span><span>…… / ۱۰</span></div>
+  </div>
+  <p><b>هدف این فرم ارزشیابی آموزگار نیست؛ تخصیص منابع توست.</b> اگر تسلط و اطمینان پایین
+  و استرس بالا بود، آن فرد به مشاهده و کوچینگ فشرده‌تر نیاز دارد — نه به تذکر.</p>
+
+  <div class="t-wrap">
+    <table>
+      <thead><tr><th scope="col">نشانه</th><th scope="col">پاسخ پیشنهادی تو</th></tr></thead>
+      <tbody>
+        <tr><th scope="row">دو هفته‌ی پیاپی، استرس بالا و تسلط پایین</th><td>مشاهده‌ی هفتگی به‌جای ماهانه؛ بررسی بار کاری با مدیر</td></tr>
+        <tr><th scope="row">می‌گوید «مشکلی ندارم» ولی نشانه‌ها خلافش را می‌گوید</th><td>به‌جای پرسش کلی، از موقعیت مشخص بپرس: «دیروز موقع زنگ ورزش چه شد؟»</td></tr>
+        <tr><th scope="row">کلاس با چند دانش‌آموز نیازمند حمایت ویژه</th><td>مسئله‌ی ساختاری است، نه مهارتی؛ با مدیر و مشاور مطرح کن</td></tr>
+        <tr><th scope="row">نشانه‌های فرسودگی: بی‌خوابی، گریه، غیبت مکرر</th><td>گفت‌وگوی حمایتی و ارجاع؛ این از حدود نقش منتور بیرون است</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<section id="goftogoo">
+  <p class="kicker">بخش پنجم</p>
+  <h2>سه گفت‌وگوی دشوار با آموزگار تازه‌کار</h2>
+
+  <h3>۱. وقتی مشکل را انکار می‌کند</h3>
+  <div class="script">
+    <p><b>نگو:</b> «ولی من دیدم کلاست شلوغ بود.»</p>
+    <p><b>بگو:</b> «من فقط ده دقیقه بودم و همان یک لحظه‌ی انتقال را دیدم.
+    خودت آن لحظه را چطور دیدی؟»</p>
+  </div>
+
+  <h3>۲. وقتی بازخورد را شخصی می‌گیرد</h3>
+  <div class="script">
+    <p><b>نگو:</b> «این انتقاد نیست، ناراحت نشو.»</p>
+    <p><b>بگو:</b> «من درباره‌ی آن پنج دقیقه حرف می‌زنم، نه درباره‌ی معلم بودنت.
+    همه‌ی ما سال اول همین‌جا گیر کردیم.»</p>
+  </div>
+
+  <h3>۳. وقتی بیش از توان خودش کار می‌کند</h3>
+  <div class="script">
+    <p><b>نگو:</b> «به خودت سخت نگیر.»</p>
+    <p><b>بگو:</b> «این هفته کدام کار را می‌توانی انجام ندهی؟
+    بیا با هم تصمیم بگیریم چه چیزی فوری نیست.»</p>
+  </div>
+
+  <div class="note brand">
+    <p>به آموزگاری که می‌گوید «کلاس از دستم خارج می‌شود» اول نگو «اضطرابت را مدیریت کن».
+    بگو: <b>«بیا ببینیم دقیقاً در چه لحظه‌ای کلاس از دست می‌رود؛ یک راهبرد مشخص انتخاب کنیم؛
+    اجرای یک معلم ماهر را ببین؛ خودت امتحان کن؛ من مشاهده می‌کنم؛ بعد با هم اصلاحش می‌کنیم.»</b></p>
+  </div>
+</section>
+
+<section id="marz-mentor">
+  <p class="kicker">بخش ششم</p>
+  <h2>آنچه در حدود تو نیست</h2>
+  <p>بخشی از اضطراب آموزگار تازه‌کار ریشه‌ی ساختاری دارد و با مهارت‌آموزی حل نمی‌شود.
+  در این موارد کار تو <b>انتقال مسئله</b> است، نه حل کردنش:</p>
+  <ul>
+    <li>بار کاری غیرمنطقی و مسئولیت‌های جانبی پرشمار</li>
+    <li>کلاس پرجمعیت با چند دانش‌آموز نیازمند حمایت ویژه</li>
+    <li>نبود زمان برنامه‌ریزی در برنامه‌ی هفتگی</li>
+    <li>مسائل سلامت روان که نیاز به ارجاع تخصصی دارد</li>
+  </ul>
+  <blockquote>گاهی پاسخِ اضطراب آموزگار تازه‌کار، آموزش تاب‌آوری بیشتر نیست؛
+  کم‌کردن تقاضاهای غیرمنطقی محیط است.</blockquote>
+</section>
+
+<section id="khat">
+  <p class="kicker">جمع‌بندی</p>
+  <h2>پنج خط قرمز و یک چک‌لیست</h2>
+  <ol>
+    <li>او را با دوره و بخش‌نامه بمباران نکن.</li>
+    <li>نقش منتور را به بازرس تبدیل نکن.</li>
+    <li>در اولین مشاهده، فهرست بلند نقاط ضعف تحویلش نده.</li>
+    <li>هر مشکلش را با «باید اعتمادبه‌نفس داشته باشی» پاسخ نده.</li>
+    <li>انتظار نداشته باش عملکرد ماه اولش شبیه معلم ده‌ساله باشد.</li>
+  </ol>
+
+  <h3>چک‌لیست ماهانه‌ی خودت</h3>
+  <ul class="check">
+    <li>این ماه دست‌کم یک بار کلاسش را دیده‌ام.</li>
+    <li>بازخوردم روی رفتار مشخص بوده، نه روی شخص.</li>
+    <li>در هر گفت‌وگو فقط یک راهبرد تعیین کرده‌ایم.</li>
+    <li>پرسیده‌ام چه کاری را می‌تواند انجام ندهد، نه فقط چه کاری را اضافه کند.</li>
+    <li>اگر مسئله ساختاری بوده، آن را به مدیر یا کارگروه منتقل کرده‌ام.</li>
+    <li>اگر نیاز به حمایت بیشتری داشته، برنامه‌ام را تغییر داده‌ام.</li>
+  </ul>
+
+  <blockquote>هدف صد روز اول ساختن «معلم کامل» نیست؛ ساختن معلمی است که وقتی نمی‌داند چه کند،
+  بلد باشد مسئله را بشناسد، کمک بگیرد، راه‌حلی را امتحان کند، نتیجه را بسنجد و دوباره بهتر عمل کند.</blockquote>
+
+  <div class="note">
+    <p><b>پشتوانه‌ی این سند:</b> جمع‌بندی مرورهای نظام‌مند و فراتحلیل‌های حوزه‌ی معلمان تازه‌کار،
+    داده‌های بین‌المللی TALIS، و کارآزمایی‌های منتورینگ و کوچینگ مدیریت کلاس.
+    «برنامه‌ی صد روز» یک پروتکل واحدِ آزموده‌شده نیست؛ طراحی تلفیقی بر پایه‌ی اجزای مؤثر
+    این پژوهش‌هاست و باید با شرایط هر منطقه تطبیق داده شود.</p>
+  </div>
+</section>
+
+<footer>
+  مدیریت آموزش و پرورش مبارکه · معاونت آموزش ابتدایی · کارگروه کیفیت‌بخشی آموزش ابتدایی<br>
+  تهیه و تنظیم: یوسف احمدپور — سرگروه آموزشی دوره‌ی ابتدایی
+</footer>
+</div></body></html>

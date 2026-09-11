@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>بودجه‌بندی پیشنهادی دروس — شش پایه ابتدایی</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-font-face.css">
+<style>
+:root{--ink:#14324E;--on:#161D1D;--onv:#3F4948;--line:#BEC9C8;--paper:#F4FBFA}
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--on);
+  font-family:Vazirmatn,"IRANSans",Tahoma,sans-serif;font-size:15px;line-height:1.8}
+.page{max-width:1180px;margin:0 auto;padding:0 16px 48px}
+.lh{background:var(--ink);color:#fff;margin:0 -16px 0;padding:16px 24px;text-align:center}
+.lh b{display:block;font-size:16px}
+.lh small{font-size:12.5px;color:#B9D0E2}
+.toolbar{display:flex;gap:8px;flex-wrap:wrap;justify-content:center;
+  padding:14px 0 6px;position:sticky;top:0;background:var(--paper);z-index:5}
+.toolbar a{text-decoration:none;color:var(--ink);border:1px solid var(--line);
+  background:#fff;border-radius:999px;padding:7px 16px;font-size:14px;font-weight:600}
+.toolbar a:hover{background:var(--ink);color:#fff;border-color:var(--ink)}
+.print-btn{border:none;background:var(--ink);color:#fff;border-radius:999px;
+  padding:8px 18px;font-family:inherit;font-size:14px;font-weight:600;cursor:pointer}
+
+.grade{background:#fff;border:1px solid var(--line);border-radius:18px;
+  padding:20px;margin:26px 0;overflow:hidden}
+.g-head{background:var(--tint);border-radius:12px;padding:12px 18px;margin:0 0 14px;
+  display:flex;justify-content:space-between;align-items:baseline;gap:12px;flex-wrap:wrap}
+.g-head h2{margin:0;font-size:clamp(1.15rem,1rem+1vw,1.6rem);font-weight:800;color:var(--ink)}
+.year{margin:0;font-size:14px;color:var(--onv)}
+.meta{display:flex;gap:10px;flex-wrap:wrap;margin:0 0 12px;font-size:14px;color:var(--onv)}
+.meta span{flex:1 1 180px;border:1px solid var(--line);border-radius:10px;padding:7px 12px}
+.meta i{display:inline-block;min-width:90px;border-bottom:1px dotted #9AA5B1}
+
+.t-wrap{overflow-x:auto;border:1px solid var(--line);border-radius:12px}
+table{width:100%;border-collapse:collapse;min-width:760px;font-size:14.5px}
+th,td{border:1px solid var(--line);padding:9px 10px;text-align:center}
+.terms th{background:var(--ink);color:#fff;font-weight:600;font-size:15px}
+.months th{background:var(--tint);color:var(--ink);font-weight:700}
+tbody th{background:var(--accent);color:#fff;font-weight:700;text-align:right;
+  white-space:nowrap;min-width:120px}
+tbody tr:nth-child(even) td{background:#F7FAFB}
+tbody td{font-variant-numeric:tabular-nums;letter-spacing:.3px}
+
+.notes{margin-top:14px;background:#FCFBF6;border:1px solid var(--line);
+  border-radius:12px;padding:12px 18px;font-size:14px;color:var(--onv)}
+.notes b{color:var(--ink)}
+.notes ol{margin:6px 0 0;padding-inline-start:20px}
+.notes li{margin-bottom:4px}
+
+footer{text-align:center;color:var(--onv);font-size:13px;line-height:1.9;
+  border-top:1px solid var(--line);margin-top:26px;padding-top:14px}
+
+@page{size:A4 landscape;margin:10mm}
+@media print{
+  body{background:#fff;font-size:10.5pt}
+  .toolbar{display:none}
+  .lh{background:#fff;color:#000;border-bottom:2px solid #000;margin:0;padding:6px 0}
+  .lh small{color:#333}
+  .page{max-width:none;padding:0}
+  .grade{border:none;padding:0;margin:0;break-after:page;break-inside:avoid;
+    -webkit-print-color-adjust:exact;print-color-adjust:exact}
+  .grade:last-of-type{break-after:auto}
+  .t-wrap{overflow:visible}
+  table{min-width:0}
+  footer{display:none}
+}
+</style>
+</head>
+<body>
+<div class="page">
+
+<header class="lh">
+  <b>مدیریت آموزش و پرورش مبارکه</b>
+  <small>معاونت آموزش ابتدایی · کارگروه کیفیت‌بخشی آموزش ابتدایی</small>
+</header>
+
+<nav class="toolbar" aria-label="پرش به پایه">
+  <a href="#پایه-اول">پایه اول</a><a href="#پایه-دوم">پایه دوم</a><a href="#پایه-سوم">پایه سوم</a><a href="#پایه-چهارم">پایه چهارم</a><a href="#پایه-پنجم">پایه پنجم</a><a href="#پایه-ششم">پایه ششم</a>
+  <button class="print-btn" type="button" onclick="window.print()">چاپ همه‌ی پایه‌ها</button>
+</nav>
+
+
+<section id="پایه-اول" class="grade" style="--tint:#FFF3C4;--accent:#E0A21A">
+  <header class="g-head">
+    <h2>بودجه‌بندی پیشنهادی دروس پایه اول دبستان</h2>
+    <p class="year">سال تحصیلی ۱۴۰۵ ـ ۱۴۰۶</p>
+  </header>
+
+  <div class="meta">
+    <span>مدرسه: <i></i></span><span>آموزگار: <i></i></span><span>کلاس: <i></i></span>
+  </div>
+
+  <div class="t-wrap">
+    <table>
+      <thead>
+        <tr class="terms">
+          <th rowspan="2" scope="col">درس</th>
+          <th colspan="4" scope="colgroup">نوبت اول</th>
+          <th colspan="4" scope="colgroup">نوبت دوم</th>
+        </tr>
+        <tr class="months"><th scope='col'>مهر</th><th scope='col'>آبان</th><th scope='col'>آذر</th><th scope='col'>دی</th><th scope='col'>بهمن</th><th scope='col'>اسفند</th><th scope='col'>فروردین</th><th scope='col'>اردیبهشت</th></tr>
+      </thead>
+      <tbody><tr><th scope='row'>قرآن</th><td>۱۴ – ۱۷</td><td>۱۸ – ۲۷</td><td>۲۸ – ۳۹</td><td>۴۰ – ۴۹</td><td>۵۰ – ۵۹</td><td>۶۰ – ۶۷</td><td>۶۸ – ۷۱</td><td>۷۲ – ۸۰</td></tr><tr><th scope='row'>فارسی</th><td>۲ – ۲۲</td><td>۲۳ – ۳۷</td><td>۳۸ – ۴۸</td><td>۴۹ – ۶۰</td><td>۶۱ – ۷۳</td><td>۷۴ – ۸۷</td><td>۸۸ – ۹۵</td><td>۹۶ – ۱۱۴</td></tr><tr><th scope='row'>ریاضی</th><td>۱ – ۲۸</td><td>۲۹ – ۴۹</td><td>۵۰ – ۷۳</td><td>۷۴ – ۹۶</td><td>۹۷ – ۱۲۳</td><td>۱۲۴ – ۱۴۷</td><td>۱۴۸ – ۱۵۹</td><td>۱۶۰ – ۱۷۵</td></tr><tr><th scope='row'>علوم تجربی</th><td>۱۰ – ۱۳</td><td>۱۴ – ۲۵</td><td>۲۶ – ۴۱</td><td>۴۲ – ۵۹</td><td>۶۰ – ۶۹</td><td>۷۰ – ۷۹</td><td>۸۰ – ۹۱</td><td>۹۲ – ۱۰۳</td></tr></tbody>
+    </table>
+  </div>
+
+  <div class="notes"><b>توضیحات</b><ol><li>این زمان‌بندی (بودجه‌بندی) پیشنهادی می‌باشد.</li><li>زمان‌بندی درس‌های قرآن بر اساس کتاب آموزش قرآن تهیه گردیده است.</li><li>زمان‌بندی درس فارسی بر اساس کتاب فارسی بخوانیم و مهارت‌های نوشتاری تهیه گردیده است.</li><li>کتاب فارسی نوشتاری هم‌گام با فارسی خوانداری حل شود.</li></ol></div>
+</section>
+<section id="پایه-دوم" class="grade" style="--tint:#FFE6C7;--accent:#D98324">
+  <header class="g-head">
+    <h2>بودجه‌بندی پیشنهادی دروس پایه دوم دبستان</h2>
+    <p class="year">سال تحصیلی ۱۴۰۵ ـ ۱۴۰۶</p>
+  </header>
+
+  <div class="meta">
+    <span>مدرسه: <i></i></span><span>آموزگار: <i></i></span><span>کلاس: <i></i></span>
+  </div>
+
+  <div class="t-wrap">
+    <table>
+      <thead>
+        <tr class="terms">
+          <th rowspan="2" scope="col">درس</th>
+          <th colspan="4" scope="colgroup">نوبت اول</th>
+          <th colspan="4" scope="colgroup">نوبت دوم</th>
+        </tr>
+        <tr class="months"><th scope='col'>مهر</th><th scope='col'>آبان</th><th scope='col'>آذر</th><th scope='col'>دی</th><th scope='col'>بهمن</th><th scope='col'>اسفند</th><th scope='col'>فروردین</th><th scope='col'>اردیبهشت</th></tr>
+      </thead>
+      <tbody><tr><th scope='row'>قرآن</th><td>۲ – ۱۵</td><td>۱۶ – ۲۵</td><td>۲۶ – ۳۹</td><td>۴۰ – ۵۲</td><td>۵۳ – ۶۸</td><td>۶۹ – ۸۴</td><td>۸۵ – ۹۴</td><td>۹۵ – ۱۱۰</td></tr><tr><th scope='row'>هدیه‌های آسمان</th><td>۱۰ – ۲۱</td><td>۲۲ – ۳۵</td><td>۳۶ – ۴۷</td><td>۴۸ – ۶۱</td><td>۶۲ – ۷۵</td><td>۷۶ – ۸۳</td><td>۸۴ – ۸۷</td><td>۸۸ – ۹۵</td></tr><tr><th scope='row'>فارسی</th><td>۲ – ۹</td><td>۱۰ – ۳۰</td><td>۳۲ – ۴۸</td><td>۵۰ – ۶۲</td><td>۶۳ – ۷۱</td><td>۷۲ – ۸۵</td><td>۸۶ – ۱۰۰</td><td>۱۰۲ – ۱۱۴</td></tr><tr><th scope='row'>علوم تجربی</th><td>۱۲ – ۲۱</td><td>۲۲ – ۳۷</td><td>۳۸ – ۵۳</td><td>۵۴ – ۶۳</td><td>۶۴ – ۷۵</td><td>۷۶ – ۸۹</td><td>۹۰ – ۹۷</td><td>۹۸ – ۱۰۳</td></tr><tr><th scope='row'>ریاضی</th><td>۱ – ۱۸</td><td>۱۹ – ۳۶</td><td>۳۷ – ۵۸</td><td>۵۹ – ۷۲</td><td>۷۳ – ۹۰</td><td>۹۱ – ۱۰۸</td><td>۱۰۹ – ۱۲۶</td><td>۱۲۷ – ۱۴۴</td></tr></tbody>
+    </table>
+  </div>
+
+  <div class="notes"><b>توضیحات</b><ol><li>این زمان‌بندی (بودجه‌بندی) پیشنهادی می‌باشد.</li><li>زمان‌بندی تمامی دروس پایه دوم ابتدایی بر اساس آخرین چاپ کتاب درسی تهیه شده است.</li><li>درس هدیه‌های آسمان با توجه به مناسبت‌ها می‌توان به صورت پیمانه‌ای تدریس شود.</li><li>کتاب فارسی نوشتاری هم‌گام با فارسی خوانداری حل شود.</li></ol></div>
+</section>
+<section id="پایه-سوم" class="grade" style="--tint:#D9F2DC;--accent:#2E8B57">
+  <header class="g-head">
+    <h2>بودجه‌بندی پیشنهادی دروس پایه سوم دبستان</h2>
+    <p class="year">سال تحصیلی ۱۴۰۵ ـ ۱۴۰۶</p>
+  </header>
+
+  <div class="meta">
+    <span>مدرسه: <i></i></span><span>آموزگار: <i></i></span><span>کلاس: <i></i></span>
+  </div>
+
+  <div class="t-wrap">
+    <table>
+      <thead>
+        <tr class="terms">
+          <th rowspan="2" scope="col">درس</th>
+          <th colspan="4" scope="colgroup">نوبت اول</th>
+          <th colspan="4" scope="colgroup">نوبت دوم</th>
+        </tr>
+        <tr class="months"><th scope='col'>مهر</th><th scope='col'>آبان</th><th scope='col'>آذر</th><th scope='col'>دی</th><th scope='col'>بهمن</th><th scope='col'>اسفند</th><th scope='col'>فروردین</th><th scope='col'>اردیبهشت</th></tr>
+      </thead>
+      <tbody><tr><th scope='row'>قرآن</th><td>۱ – ۱۷</td><td>۱۸ – ۳۳</td><td>۳۴ – ۴۶</td><td>۴۷ – ۶۲</td><td>۶۳ – ۷۹</td><td>۸۰ – ۹۷</td><td>۹۸ – ۱۰۵</td><td>۱۰۶ – ۱۱۴</td></tr><tr><th scope='row'>هدیه‌های آسمان</th><td>۸ – ۲۵</td><td>۲۶ – ۴۵</td><td>۴۶ – ۶۵</td><td>۶۶ – ۸۳</td><td>۸۴ – ۱۰۱</td><td>۱۰۲ – ۱۱۳</td><td>۱۱۴ – ۱۱۹</td><td>۱۲۰ – ۱۲۸</td></tr><tr><th scope='row'>فارسی</th><td>۱۰ – ۲۸</td><td>۲۹ – ۴۴</td><td>۴۵ – ۶۴</td><td>۶۵ – ۷۸</td><td>۷۹ – ۹۷</td><td>۹۸ – ۱۰۸</td><td>۱۰۹ – ۱۱۳</td><td>۱۱۴ – ۱۲۸</td></tr><tr><th scope='row'>علوم تجربی</th><td>۷ – ۲۲</td><td>۲۳ – ۴۴</td><td>۴۵ – ۶۰</td><td>۶۱ – ۷۴</td><td>۷۵ – ۹۲</td><td>۹۳ – ۱۱۰</td><td>۱۱۱ – ۱۲۴</td><td>۱۲۵ – ۱۲۸</td></tr><tr><th scope='row'>ریاضی</th><td>۷ – ۲۴</td><td>۲۵ – ۴۲</td><td>۴۳ – ۶۰</td><td>۶۱ – ۷۸</td><td>۷۹ – ۹۶</td><td>۹۷ – ۱۱۴</td><td>۱۱۵ – ۱۳۲</td><td>۱۳۳ – ۱۵۰</td></tr><tr><th scope='row'>مطالعات اجتماعی</th><td>۲ – ۱۴</td><td>۱۵ – ۲۸</td><td>۲۹ – ۳۹</td><td>۴۰ – ۵۴</td><td>۵۵ – ۷۰</td><td>۷۱ – ۸۰</td><td>۸۱ – ۸۵</td><td>۸۶ – ۹۸</td></tr></tbody>
+    </table>
+  </div>
+
+  <div class="notes"><b>توضیحات</b><ol><li>این زمان‌بندی (بودجه‌بندی) پیشنهادی می‌باشد.</li><li>زمان‌بندی تمامی دروس پایه سوم ابتدایی بر اساس آخرین چاپ کتاب درسی تهیه شده است.</li><li>درس هدیه‌های آسمان با توجه به مناسبت‌ها می‌توان به صورت پیمانه‌ای تدریس شود.</li><li>کتاب فارسی نوشتاری هم‌گام با فارسی خوانداری حل شود.</li><li>کاربرگ‌های مطالعات اجتماعی همراه با درس‌ها حل شود.</li></ol></div>
+</section>
+<section id="پایه-چهارم" class="grade" style="--tint:#FBDCE8;--accent:#C2528B">
+  <header class="g-head">
+    <h2>بودجه‌بندی پیشنهادی دروس پایه چهارم دبستان</h2>
+    <p class="year">سال تحصیلی ۱۴۰۵ ـ ۱۴۰۶</p>
+  </header>
+
+  <div class="meta">
+    <span>مدرسه: <i></i></span><span>آموزگار: <i></i></span><span>کلاس: <i></i></span>
+  </div>
+
+  <div class="t-wrap">
+    <table>
+      <thead>
+        <tr class="terms">
+          <th rowspan="2" scope="col">درس</th>
+          <th colspan="4" scope="colgroup">نوبت اول</th>
+          <th colspan="4" scope="colgroup">نوبت دوم</th>
+        </tr>
+        <tr class="months"><th scope='col'>مهر</th><th scope='col'>آبان</th><th scope='col'>آذر</th><th scope='col'>دی</th><th scope='col'>بهمن</th><th scope='col'>اسفند</th><th scope='col'>فروردین</th><th scope='col'>اردیبهشت</th></tr>
+      </thead>
+      <tbody><tr><th scope='row'>قرآن</th><td>۱ – ۱۱</td><td>۱۲ – ۲۱</td><td>۲۲ – ۳۰</td><td>۳۱ – ۴۰</td><td>۴۱ – ۵۱</td><td>۵۲ – ۶۱</td><td>۶۲ – ۶۷</td><td>۶۸ – ۷۷</td></tr><tr><th scope='row'>هدیه‌های آسمان</th><td>۸ – ۱۹</td><td>۲۰ – ۳۹</td><td>۴۰ – ۵۹</td><td>۶۰ – ۷۶</td><td>۷۷ – ۸۹</td><td>۹۰ – ۱۰۱</td><td>۱۰۲ – ۱۱۹</td><td>۱۲۰ – ۱۲۸</td></tr><tr><th scope='row'>فارسی</th><td>۸ – ۲۸</td><td>۳۰ – ۴۱</td><td>۴۲ – ۶۱</td><td>۶۲ – ۷۹</td><td>۸۰ – ۱۰۲</td><td>۱۰۴ – ۱۲۲</td><td>۱۲۴ – ۱۲۹</td><td>۱۳۰ – ۱۴۰</td></tr><tr><th scope='row'>علوم تجربی</th><td>۱ – ۱۴</td><td>۱۵ – ۲۶</td><td>۲۷ – ۴۶</td><td>۴۷ – ۵۸</td><td>۵۹ – ۷۶</td><td>۷۷ – ۹۲</td><td>۹۳ – ۱۰۲</td><td>۱۰۳ – ۱۱۹</td></tr><tr><th scope='row'>ریاضی</th><td>۱ – ۱۹</td><td>۲۰ – ۴۴</td><td>۴۵ – ۶۷</td><td>۶۸ – ۸۱</td><td>۸۲ – ۹۶</td><td>۹۷ – ۱۱۸</td><td>۱۱۹ – ۱۲۹</td><td>۱۳۰ – ۱۵۴</td></tr><tr><th scope='row'>مطالعات اجتماعی</th><td>۱ – ۱۴</td><td>۱۵ – ۳۳</td><td>۳۴ – ۴۶</td><td>۴۷ – ۶۱</td><td>۶۲ – ۷۸</td><td>۷۹ – ۹۳</td><td>۹۴ – ۹۸</td><td>۹۹ – ۱۱۰</td></tr></tbody>
+    </table>
+  </div>
+
+  <div class="notes"><b>توضیحات</b><ol><li>این زمان‌بندی (بودجه‌بندی) پیشنهادی می‌باشد.</li><li>زمان‌بندی تمامی دروس پایه چهارم ابتدایی بر اساس آخرین چاپ کتاب درسی تهیه شده است.</li><li>درس هدیه‌های آسمان با توجه به مناسبت‌ها می‌توان به صورت پیمانه‌ای تدریس شود.</li><li>کتاب فارسی نوشتاری هم‌گام با فارسی خوانداری حل شود.</li><li>کاربرگ‌های مطالعات اجتماعی همراه با درس‌ها حل شود.</li></ol></div>
+</section>
+<section id="پایه-پنجم" class="grade" style="--tint:#E4E1F5;--accent:#6E4EA0">
+  <header class="g-head">
+    <h2>بودجه‌بندی پیشنهادی دروس پایه پنجم دبستان</h2>
+    <p class="year">سال تحصیلی ۱۴۰۵ ـ ۱۴۰۶</p>
+  </header>
+
+  <div class="meta">
+    <span>مدرسه: <i></i></span><span>آموزگار: <i></i></span><span>کلاس: <i></i></span>
+  </div>
+
+  <div class="t-wrap">
+    <table>
+      <thead>
+        <tr class="terms">
+          <th rowspan="2" scope="col">درس</th>
+          <th colspan="4" scope="colgroup">نوبت اول</th>
+          <th colspan="4" scope="colgroup">نوبت دوم</th>
+        </tr>
+        <tr class="months"><th scope='col'>مهر</th><th scope='col'>آبان</th><th scope='col'>آذر</th><th scope='col'>دی</th><th scope='col'>بهمن</th><th scope='col'>اسفند</th><th scope='col'>فروردین</th><th scope='col'>اردیبهشت</th></tr>
+      </thead>
+      <tbody><tr><th scope='row'>قرآن</th><td>۱ – ۱۴</td><td>۱۵ – ۲۸</td><td>۲۹ – ۴۴</td><td>۴۵ – ۵۱</td><td>۵۲ – ۶۶</td><td>۶۷ – ۸۴</td><td>۸۵ – ۹۵</td><td>۹۶ – ۱۰۴</td></tr><tr><th scope='row'>هدیه‌های آسمان</th><td>۶ – ۱۶</td><td>۱۷ – ۳۲</td><td>۳۲ – ۴۸</td><td>۴۹ – ۶۴</td><td>۶۵ – ۸۱</td><td>۸۲ – ۹۸</td><td>۹۹ – ۱۰۸</td><td>۱۰۹ – ۱۲۰</td></tr><tr><th scope='row'>فارسی</th><td>۱ – ۲۰</td><td>۲۱ – ۴۰</td><td>۴۱ – ۶۰</td><td>۶۱ – ۸۰</td><td>۸۱ – ۱۰۰</td><td>۱۰۱ – ۱۲۰</td><td>۱۲۱ – ۱۳۲</td><td>۱۳۳ – ۱۴۰</td></tr><tr><th scope='row'>علوم تجربی</th><td>۱ – ۱۳</td><td>۱۴ – ۲۶</td><td>۲۷ – ۳۹</td><td>۴۰ – ۵۲</td><td>۵۳ – ۶۵</td><td>۶۶ – ۷۸</td><td>۷۹ – ۹۰</td><td>۹۱ – ۹۸</td></tr><tr><th scope='row'>ریاضی</th><td>۱ – ۲۰</td><td>۲۱ – ۴۱</td><td>۴۲ – ۶۶</td><td>۶۷ – ۷۸</td><td>۷۹ – ۹۹</td><td>۱۰۰ – ۱۱۷</td><td>۱۱۸ – ۱۲۷</td><td>۱۲۸ – ۱۴۱</td></tr><tr><th scope='row'>مطالعات اجتماعی</th><td>۱ – ۱۸</td><td>۱۹ – ۳۶</td><td>۳۷ – ۵۴</td><td>۵۵ – ۷۲</td><td>۷۳ – ۹۰</td><td>۹۱ – ۱۰۷</td><td>۱۰۸ – ۱۱۶</td><td>۱۱۷ – ۱۲۹</td></tr></tbody>
+    </table>
+  </div>
+
+  <div class="notes"><b>توضیحات</b><ol><li>این زمان‌بندی (بودجه‌بندی) پیشنهادی می‌باشد.</li><li>زمان‌بندی تمامی دروس پایه پنجم ابتدایی بر اساس آخرین چاپ کتاب درسی تهیه شده است.</li><li>درس هدیه‌های آسمان با توجه به مناسبت‌ها می‌توان به صورت پیمانه‌ای تدریس شود.</li><li>کتاب فارسی نوشتاری هم‌گام با فارسی خوانداری حل شود.</li><li>کاربرگ‌های مطالعات اجتماعی همراه با درس‌ها حل شود.</li></ol></div>
+</section>
+<section id="پایه-ششم" class="grade" style="--tint:#D8EEF7;--accent:#1F7FB0">
+  <header class="g-head">
+    <h2>بودجه‌بندی پیشنهادی دروس پایه ششم دبستان</h2>
+    <p class="year">سال تحصیلی ۱۴۰۵ ـ ۱۴۰۶</p>
+  </header>
+
+  <div class="meta">
+    <span>مدرسه: <i></i></span><span>آموزگار: <i></i></span><span>کلاس: <i></i></span>
+  </div>
+
+  <div class="t-wrap">
+    <table>
+      <thead>
+        <tr class="terms">
+          <th rowspan="2" scope="col">درس</th>
+          <th colspan="4" scope="colgroup">نوبت اول</th>
+          <th colspan="4" scope="colgroup">نوبت دوم</th>
+        </tr>
+        <tr class="months"><th scope='col'>مهر</th><th scope='col'>آبان</th><th scope='col'>آذر</th><th scope='col'>دی</th><th scope='col'>بهمن</th><th scope='col'>اسفند</th><th scope='col'>فروردین</th><th scope='col'>اردیبهشت</th></tr>
+      </thead>
+      <tbody><tr><th scope='row'>قرآن</th><td>۲ – ۱۳</td><td>۱۴ – ۲۳</td><td>۲۴ – ۳۵</td><td>۳۶ – ۴۵</td><td>۴۶ – ۶۱</td><td>۶۲ – ۷۲</td><td>۷۳ – ۷۵</td><td>۷۶ – ۸۳</td></tr><tr><th scope='row'>هدیه‌های آسمان</th><td>۸ – ۱۹</td><td>۲۰ – ۳۶</td><td>۳۷ – ۴۹</td><td>۵۰ – ۵۹</td><td>۶۰ – ۷۱</td><td>۷۲ – ۸۶</td><td>۸۷ – ۹۱</td><td>۹۲ – ۱۱۲</td></tr><tr><th scope='row'>فارسی</th><td>۸ – ۲۵</td><td>۲۶ – ۳۶</td><td>۳۷ – ۵۷</td><td>۵۸ – ۷۳</td><td>۷۴ – ۸۹</td><td>۹۰ – ۹۷</td><td>۹۸ – ۱۰۰</td><td>۱۰۱ – ۱۱۴</td></tr><tr><th scope='row'>علوم تجربی</th><td>۱ – ۱۷</td><td>۱۸ – ۳۱</td><td>۳۲ – ۴۷</td><td>۴۸ – ۶۵</td><td>۶۶ – ۷۹</td><td>۸۰ – ۹۳</td><td>۹۴ – ۱۰۰</td><td>۱۰۱ – ۱۰۶</td></tr><tr><th scope='row'>ریاضی</th><td>۱ – ۲۰</td><td>۲۱ – ۴۱</td><td>۴۲ – ۶۱</td><td>۶۲ – ۸۲</td><td>۸۳ – ۱۰۲</td><td>۱۰۳ – ۱۲۳</td><td>۱۲۴ – ۱۳۳</td><td>۱۳۴ – ۱۴۴</td></tr><tr><th scope='row'>مطالعات اجتماعی</th><td>۱۱ – ۲۰</td><td>۲۱ – ۳۹</td><td>۴۰ – ۵۸</td><td>۵۹ – ۷۰</td><td>۷۱ – ۹۴</td><td>۹۵ – ۱۱۸</td><td>۱۱۹ – ۱۳۰</td><td>۱۳۱ – ۱۵۱</td></tr><tr><th scope='row'>تفکر و پژوهش</th><td>۱۳ – ۲۳</td><td>۲۴ – ۳۶</td><td>۳۷ – ۵۵</td><td>۵۶ – ۷۱</td><td>۷۲ – ۸۴</td><td>۸۵ – ۹۶</td><td>۹۷ – ۱۰۰</td><td>۱۰۰ – ۱۱۲</td></tr><tr><th scope='row'>کار و فناوری</th><td>۱۲ – ۲۸</td><td>۲۹ – ۴۷</td><td>۴۸ – ۶۲</td><td>۶۳ – ۸۲</td><td>۸۳ – ۹۲</td><td>۹۳ – ۱۰۰</td><td>۱۰۱ – ۱۰۵</td><td>۱۰۶ – ۱۲۷</td></tr></tbody>
+    </table>
+  </div>
+
+  <div class="notes"><b>توضیحات</b><ol><li>این زمان‌بندی (بودجه‌بندی) پیشنهادی می‌باشد.</li><li>زمان‌بندی تمامی دروس پایه ششم ابتدایی بر اساس آخرین چاپ کتاب درسی تهیه شده است.</li><li>درس هدیه‌های آسمان با توجه به مناسبت‌ها می‌توان به صورت پیمانه‌ای تدریس شود.</li><li>کتاب فارسی نوشتاری هم‌گام با فارسی خوانداری حل شود.</li><li>کاربرگ‌های مطالعات اجتماعی همراه با درس‌ها حل شود.</li><li>در درس تفکر و پژوهش در هر فصل تعدادی درس الزامی و انتخابی طراحی شده است؛ از دروس انتخابی هر فصل، یک درس با انتخاب معلم و دانش‌آموزان اجرا می‌شود.</li></ol></div>
+</section>
+
+<footer>مدیریت آموزش و پرورش مبارکه · معاونت آموزش ابتدایی · کارگروه کیفیت‌بخشی آموزش ابتدایی<br>تهیه و تنظیم: یوسف احمدپور — سرگروه آموزشی دوره‌ی ابتدایی</footer>
+</div>
+</body>
+</html>
